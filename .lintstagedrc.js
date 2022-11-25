@@ -1,16 +1,11 @@
 const path = require('path');
 
 const buildLintCommand = (filenames) =>
-  `yarn lint ${filenames
+  `next lint --file ${filenames
     .map((f) => path.relative(process.cwd(), f))
-    .join(' ')}`;
-
-const buildFormatCommand = (filenames) =>
-  `yarn format ${filenames
-    .map((f) => path.relative(process.cwd(), f))
-    .join(' ')} `;
+    .join(' --file ')}`;
 
 module.exports = {
   '**/*.{js,jsx,ts,tsx}': [buildLintCommand],
-  '**/*': [buildFormatCommand],
+  '**/*': ['yarn prettier'],
 };

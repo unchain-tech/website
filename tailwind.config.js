@@ -1,7 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ['./app/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './hooks/**/*.{js,ts,jsx,tsx}',
+    './utils/**/*.{js,ts,jsx,tsx}',
+    './locales/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     screens: {
       mobile: '320px',
@@ -13,14 +19,16 @@ module.exports = {
     },
     extend: {
       colors: {
-        haikei: {
-          yuzu: '#f8f9c7',
-          kareha: '#e9e5af',
-          slate: '#ece4db',
-          sakura: '#ffe5e5',
-          peach: '#fddfc4',
-          miyabi: '#e4d0f6',
-          kumo: '#d3f3f1',
+        brand: {
+          onyx: '#010324',
+          red: '#ED0070',
+          purple: '#902494',
+          blue: '#7B70FF',
+          white: '#FFFFFF',
+          yellow: '#E0FF69',
+          sky: '#64FFE1',
+          lime: '#7FF200',
+          pink: '#E173FA',
         },
         success: {
           DEFAULT: '#8EFF1D',
@@ -63,6 +71,7 @@ module.exports = {
           700: '#000000',
         },
       },
+      fontFamily: { dazzle: ['dazzle_unicase', 'sans-serif'] },
     },
   },
   plugins: [require('@tailwindcss/typography')],

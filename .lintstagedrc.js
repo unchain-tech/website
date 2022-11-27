@@ -5,7 +5,9 @@ const buildLintCommand = (filenames) =>
     .map((f) => path.relative(process.cwd(), f))
     .join(' --file ')}`;
 
+const buildPrettierCommand = (filenames) => `prettier ${filenames.join(' ')}`;
+
 module.exports = {
   '**/*.{js,jsx,ts,tsx}': [buildLintCommand],
-  '**/*': ['yarn prettier'],
+  '**/*.{js,jsx,ts,tsx,json}': [buildPrettierCommand],
 };

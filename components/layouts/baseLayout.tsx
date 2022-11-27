@@ -23,9 +23,9 @@ export const Layout: FC<Props> = ({ pageTitle, children }) => {
             : `${siteTitle} | ${subTitle}`}
         </title>
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:url" content="shiftbase.xyz" />
+        <meta property="og:url" content="unchain.tech" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="shiftbase, inc." />
+        <meta property="og:title" content="UNCHAIN" />
         <meta
           property="og:image"
           content="https://www.unchain.tech/UNCHAIN_banner.png"

@@ -56,7 +56,7 @@ export const Services = () => {
         </div>
 
         <div id="button" className="mt-6 flex justify-center">
-          <Link href="/learn" passHref={true}>
+          <Link href="https://airtable.com/shrKEXFRup9ZqF3GY" passHref={true}>
             <button className="btn px-12 text-brand-white bg-neutral-700 hover:bg-brand-blue desktop:px-24 desktop:py-6">
               Learn more
             </button>

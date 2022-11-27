@@ -1,7 +1,9 @@
+import Head from 'next/head';
+
+import { FC, ReactNode } from 'react';
+
 import Footer from 'components/molecules/footer';
 import Header from 'components/molecules/header';
-import Head from 'next/head';
-import { FC, ReactNode } from 'react';
 
 type Props = {
   pageTitle: string;

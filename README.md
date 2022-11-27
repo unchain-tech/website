@@ -1,4 +1,4 @@
-# UNCHAIN landing page
+# UNCHAIN official landing page
 
 ## Features
 

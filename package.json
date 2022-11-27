@@ -1,11 +1,11 @@
 {
-  "name": "nextjs-boilerplate",
-  "version": "0.2.0",
-  "description": "Nextjs bootstrap",
+  "name": "unchain_landingpage",
+  "version": "1.0.0",
+  "description": "UNCHAIN landing page",
   "main": "app/layout.tsx",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neila/nextjs-template.git"
+    "url": "git+https://github.com/shiftbase-inc/UNCHAIN-LP.git"
   },
   "author": "SHØ <neila@users.noreply.github.com> (https://akxra.art/)",
   "contributors": [
@@ -13,7 +13,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/neila/nextjs-template/issues"
+    "url": "https://github.com/shiftbase-inc/UNCHAIN-LP/issues"
   },
   "packageManager": "yarn@3.2.4",
   "dependencies": {
@@ -23,14 +23,20 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.8",
+    "@trivago/prettier-plugin-sort-imports": "^3.4.0",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@typescript-eslint/eslint-plugin": "latest",
     "autoprefixer": "^10.4.13",
+    "eslint": "^8.27.0",
+    "eslint-config-next": "^13.0.2",
+    "eslint-config-prettier": "^8.5.0",
+    "hamburger-react": "^2.5.0",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.19",
-    "rome": "^10.0.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "simple-git-hooks": "^2.8.0",
     "tailwindcss": "^3.2.4",
     "typescript": "4.8.4"
@@ -42,9 +48,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "yarn run rome check .",
-    "lint:fix": "yarn run rome check . --apply",
-    "format": "yarn run rome format .",
-    "format:fix": "yarn run rome format . --write"
+    "lint": "next lint --fix",
+    "prettier": "prettier --ignore-unknown --no-error-on-unmatched-pattern --ignore-path .gitignore --write ."
   }
 }

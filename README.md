@@ -1,10 +1,11 @@
-# Sho's Nextjs template
+# UNCHAIN landing page
 
 ## Features
 
 - typescript
 - tailwindcss
-- Rome linter & formatter
+- ESlinter
+- prettier
 - vscode settings
 
 ## Instantiate

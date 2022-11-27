@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-onyx text-base font-light text-brand-white desktop:text-xl;
+  }
+  h1 {
+    @apply font-dazzle text-5xl font-medium leading-tight tracking-wide desktop:text-8xl;
+  }
+  h2 {
+    @apply font-dazzle text-3xl font-light tracking-wide desktop:text-5xl;
+  }
+  h3 {
+    @apply font-dazzle text-xl font-medium tracking-wide;
+  }
+  a {
+    @apply font-dazzle text-base font-light hover:underline laptop:hover:text-brand-yellow desktop:text-xl;
+  }
+  p {
+    @apply text-base font-normal leading-relaxed tracking-wider laptop:text-xl;
+  }
+  button {
+    @apply font-sans text-base font-medium tracking-widest laptop:text-xl;
+  }
+  footer,
+  span {
+    @apply font-dazzle font-light tracking-wider;
+  }
+}
+
+@layer components {
+  .header {
+    @apply fixed top-0 z-50 flex w-full flex-row items-center justify-between shadow-md backdrop-blur-sm;
+  }
+  .header-menuitem {
+    @apply w-full rounded-md border-2 border-neutral-500 bg-neutral-600 py-2 px-3 text-right font-sans font-semibold tracking-widest text-brand-white hover:bg-neutral-600 laptop:w-auto laptop:rounded-xl laptop:border-0 laptop:bg-transparent laptop:text-xl;
+  }
+  .btn {
+    @apply cursor-pointer rounded-2xl py-3 px-6 drop-shadow-xl;
+  }
+}
+
+@font-face {
+  font-family: 'dazzle_unicase';
+  src: url('../fonts/dazzle_unicase_heavy.otf') format('opentype');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'dazzle_unicase';
+  src: url('../fonts/dazzle_unicase_bold.otf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'dazzle_unicase';
+  src: url('../fonts/dazzle_unicase_medium.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'dazzle_unicase';
+  src: url('../fonts/dazzle_unicase_light.otf') format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'dazzle_unicase';
+  src: url('../fonts/dazzle_unicase_thin.otf') format('opentype');
+  font-weight: 100;
+}

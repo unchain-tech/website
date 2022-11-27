@@ -33,7 +33,7 @@ export const Footer: FC = () => {
           <Link
             href="https://www.notion.so/unchain-shiftbase/20220228-437efe5314d64e0f965efe911b062ce2"
             passHref={true}
-            className="cursor-pointer font-sans"
+            className="cursor-pointer font-sans hover:text-brand-blue"
             target="_blank"
           >
             Terms & Conditions
@@ -41,7 +41,7 @@ export const Footer: FC = () => {
           <Link
             href="https://www.notion.so/unchain-shiftbase/20220303-11d1b7d0e0384aa9912b6893decd51dc"
             passHref={true}
-            className="cursor-pointer font-sans"
+            className="cursor-pointer font-sans hover:text-brand-blue"
             target="_blank"
           >
             Privacy Policy
@@ -49,7 +49,7 @@ export const Footer: FC = () => {
           <Link
             href="https://shiftbase.xyz/about"
             passHref={true}
-            className="cursor-pointer font-sans"
+            className="cursor-pointer font-sans hover:text-brand-blue"
             target="_blank"
           >
             About shiftbase

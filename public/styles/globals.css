@@ -16,13 +16,13 @@
     @apply font-dazzle text-xl font-medium tracking-wide;
   }
   a {
-    @apply font-dazzle text-base font-light hover:underline laptop:hover:text-brand-yellow desktop:text-xl;
+    @apply font-dazzle text-base font-light hover:underline desktop:text-xl desktop:hover:text-brand-yellow;
   }
   p {
-    @apply text-base font-normal leading-relaxed tracking-wider laptop:text-xl;
+    @apply text-base font-normal leading-relaxed tracking-wider desktop:text-xl;
   }
   button {
-    @apply font-sans text-base font-medium tracking-widest laptop:text-xl;
+    @apply font-sans text-base font-medium tracking-widest desktop:text-xl;
   }
   footer,
   span {
@@ -33,9 +33,6 @@
 @layer components {
   .header {
     @apply fixed top-0 z-50 flex w-full flex-row items-center justify-between shadow-md backdrop-blur-sm;
-  }
-  .header-menuitem {
-    @apply w-full rounded-md border-2 border-neutral-500 bg-neutral-600 py-2 px-3 text-right font-sans font-semibold tracking-widest text-brand-white hover:bg-neutral-600 laptop:w-auto laptop:rounded-xl laptop:border-0 laptop:bg-transparent laptop:text-xl;
   }
   .btn {
     @apply cursor-pointer rounded-2xl py-3 px-6 drop-shadow-xl;

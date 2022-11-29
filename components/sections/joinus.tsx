@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import { FC } from 'react';
 
+import { useWindowDimensions } from 'hooks/useWindowDimensions';
 import UNCHAIN_icon from 'public/UNCHAIN_icon_white.png';
 
 const Slogan: FC<{ text: string; className?: string }> = ({
@@ -11,7 +12,7 @@ const Slogan: FC<{ text: string; className?: string }> = ({
 }) => {
   return (
     <h1
-      className={`font-thin text-[84px] desktop:text-[144px] leading-none z-10 ${className}`}
+      className={`font-light text-[84px] laptop:text-[120px] desktop:text-[144px] leading-none z-10 ${className}`}
     >
       {text}
     </h1>
@@ -19,6 +20,8 @@ const Slogan: FC<{ text: string; className?: string }> = ({
 };
 
 export const Joinus = () => {
+  const { width } = useWindowDimensions();
+
   return (
     <div id="Join us" className="relative bg-brand-onyx text-brand-white">
       <div id="container" className="px-6 py-16">
@@ -26,25 +29,25 @@ export const Joinus = () => {
           <div id="slogan" className="py-4 flex flex-col">
             <Slogan text="Join" />
             <Slogan className="ml-32 desktop:ml-64" text="the" />
-            <div className="flex flex-col desktop:flex-row">
+            <div className="flex flex-col laptop:flex-row">
               <Slogan text="comm" />
-              <Slogan text="unity" />
+              <Slogan text="unity." />
             </div>
           </div>
 
           <Image
             src={UNCHAIN_icon}
             alt="UNCHAIN logo"
-            className="absolute top-0 right-0 block tablet:hidden"
-            width={150}
-            height={150}
+            className="absolute top-0 right-0 block laptop:hidden"
+            width={width ? width / 3 : 150}
+            height={width ? width / 3 : 150}
           />
           <Image
             src={UNCHAIN_icon}
             alt="UNCHAIN logo"
-            className="h-full object-contain hidden tablet:block"
-            width={480}
-            height={480}
+            className="absolute right-0 hidden laptop:block"
+            width={width ? width / 4 : 480}
+            height={width ? width / 4 : 480}
           />
         </div>
         <Link

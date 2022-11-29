@@ -7,7 +7,7 @@ export const Landing: FC = () => {
     <div id="firstview">
       <div id="container" className="px-6 pb-8 desktop:px-32">
         <div id="slogan" className="pt-4 pb-2 desktop:pt-0 desktop:pb-8">
-          <h1 className="text-brand-yellow">unchain</h1>
+          <h1 className="text-brand-yellow">UNCHAIN</h1>
           <h1>your</h1>
           <h1 className="">potential.</h1>
         </div>

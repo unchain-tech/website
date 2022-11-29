@@ -9,9 +9,9 @@ export const Projects = () => {
       <div id="container" className="px-6 desktop:px-32">
         <div id="title" className="pb-8">
           <h3 className="text-brand-red desktop:text-6xl">
-            start learning and build
+            Start learning and build
           </h3>
-          <h3 className="text-brand-red desktop:text-6xl">your own projects</h3>
+          <h3 className="text-brand-red desktop:text-6xl">your own project.</h3>
         </div>
 
         <div id="items" className="space-y-2 w-3/4">

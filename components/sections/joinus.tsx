@@ -6,21 +6,21 @@ import { FC } from 'react';
 import { useWindowDimensions } from 'hooks/useWindowDimensions';
 import UNCHAIN_icon from 'public/UNCHAIN_icon_white.png';
 
-const Slogan: FC<{ text: string; className?: string }> = ({
-  className,
-  text,
-}) => {
-  return (
-    <h1
-      className={`font-light text-[84px] laptop:text-[120px] desktop:text-[144px] leading-none z-10 ${className}`}
-    >
-      {text}
-    </h1>
-  );
-};
-
 export const Joinus = () => {
   const { width } = useWindowDimensions();
+
+  const Slogan: FC<{ text: string; className?: string }> = ({
+    className,
+    text,
+  }) => {
+    return (
+      <h1
+        className={`font-light text-[84px] laptop:text-[112px] desktop:text-[144px] leading-none z-10 ${className}`}
+      >
+        {text}
+      </h1>
+    );
+  };
 
   return (
     <div id="Join us" className="relative bg-brand-onyx text-brand-white">
@@ -35,20 +35,23 @@ export const Joinus = () => {
             </div>
           </div>
 
-          <Image
-            src={UNCHAIN_icon}
-            alt="UNCHAIN logo"
-            className="absolute top-0 right-0 block laptop:hidden"
-            width={width ? width / 3 : 150}
-            height={width ? width / 3 : 150}
-          />
-          <Image
-            src={UNCHAIN_icon}
-            alt="UNCHAIN logo"
-            className="absolute right-0 hidden laptop:block"
-            width={width ? width / 4 : 480}
-            height={width ? width / 4 : 480}
-          />
+          {width! > 769 ? (
+            <Image
+              src={UNCHAIN_icon}
+              alt="UNCHAIN logo"
+              className="absolute right-0"
+              width={width! / 4}
+              height={width! / 4}
+            />
+          ) : (
+            <Image
+              src={UNCHAIN_icon}
+              alt="UNCHAIN logo"
+              className="absolute top-0 right-0"
+              width={width! / 3}
+              height={width! / 3}
+            />
+          )}
         </div>
         <Link
           href="https://airtable.com/shrKEXFRup9ZqF3GY"

@@ -1,6 +1,12 @@
 import Image from 'next/image';
 
-export const Collaborators = () => {
+import { FC } from 'react';
+
+import { useWindowDimensions } from 'hooks/useWindowDimensions';
+
+export const Collaborators: FC = () => {
+  const { width } = useWindowDimensions();
+
   const PartnerLogo = ({
     partner_name,
     logo_image,
@@ -14,14 +20,15 @@ export const Collaborators = () => {
           <Image
             src={logo_image}
             className="hover:cursor-pointer mx-auto"
-            width={300}
-            height={110}
+            width={width! > 481 ? 320 : 140}
+            height={140}
             alt={`${partner_name} logo`}
           />
         </div>
       </a>
     );
   };
+
   return (
     <div id="collaborators">
       <div id="container" className="py-8 desktop:py-16 px-6">

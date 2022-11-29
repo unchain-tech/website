@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
-export const Values = () => {
+import { FC } from 'react';
+
+export const Values: FC = () => {
   return (
     <div id="our values">
       <div

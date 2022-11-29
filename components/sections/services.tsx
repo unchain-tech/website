@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { FC } from 'react';
+
 import flowerbutton from '/public/flowerbutton.png';
 
-export const Services = () => {
+export const Services: FC = () => {
   const Card = ({ heading, description }: { [key: string]: string }) => {
     return (
       <div

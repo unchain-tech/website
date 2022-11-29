@@ -1,11 +1,41 @@
 import Image from 'next/image';
 
-import lessoncards from 'public/projects.png';
-import lessoncards_wide from 'public/projects_wide.png';
+import { FC } from 'react';
 
-export const Projects = () => {
+import SupportedNetworks from 'components/molecules/supportednetworks';
+import { useWindowDimensions } from 'hooks/useWindowDimensions';
+import lessoncards_wide from 'public/projects_wide.png';
+import lessoncards_widest from 'public/projects_widest.png';
+
+export const Projects: FC = () => {
+  const { width } = useWindowDimensions();
+
+  const BannerImage = () => {
+    if (width! < 481) {
+      return <div />;
+    } else if (width! < 1025) {
+      return (
+        <Image
+          src={lessoncards_wide}
+          className="w-full absolute top-64 laptop:top-48"
+          alt="UNCHAIN projects example"
+          priority={true}
+        />
+      );
+    } else {
+      return (
+        <Image
+          src={lessoncards_widest}
+          className="w-full absolute top-96 monitor:top-72"
+          alt="UNCHAIN projects example"
+          priority={true}
+        />
+      );
+    }
+  };
+
   return (
-    <div id="start building" className="bg-brand-white text-brand-onyx py-16">
+    <div id="start building" className="bg-brand-white text-brand-onyx pt-16">
       <div id="container" className="px-6 desktop:px-32">
         <div id="title" className="pb-8">
           <h3 className="text-brand-red desktop:text-6xl">
@@ -23,17 +53,11 @@ export const Projects = () => {
           </p>
         </div>
       </div>
-      <div className="block tablet:hidden">
-        <Image src={lessoncards} className="w-full" alt="" priority={true} />
+      <div id="container">
+        {/* <BannerImage /> */}
+        <div id="red bloc" className="bg-brand-red h-0"></div>
       </div>
-      <div className="hidden tablet:block">
-        <Image
-          src={lessoncards_wide}
-          className="w-full"
-          alt=""
-          priority={true}
-        />
-      </div>
+      <SupportedNetworks />
     </div>
   );
 };

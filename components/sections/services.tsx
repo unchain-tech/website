@@ -24,10 +24,7 @@ export const Services = () => {
   };
   return (
     <div id="what we offer" className="bg-brand-yellow text-brand-onyx">
-      <div
-        id="container"
-        className="px-6 laptop:px-12 desktop:px-32 py-8 desktop:py-24"
-      >
+      <div id="container" className="px-6 desktop:px-32 py-8 desktop:py-24">
         <div
           id="sectiontitle"
           className="flex flex-col pb-8 desktop:flex-row desktop:space-x-6"

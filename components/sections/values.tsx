@@ -5,17 +5,17 @@ export const Values = () => {
     <div id="our values">
       <div
         id="container"
-        className="px-6 laptop:px-12 desktop:px-32 pt-8 pb-16 desktop:py-24"
+        className="px-6 desktop:px-32 pt-8 pb-16 desktop:py-24"
       >
         <h2 className="text-brand-yellow">our value</h2>
         <hr className="my-4 h-px border-0 bg-brand-pink" />
 
         <div id="body" className="space-y-4">
           <div id="heading">
-            <h1 className="font-light text-7xl desktop:text-[192px] desktop:text-right">
+            <h1 className="font-light text-7xl desktop:text-[144px] desktop:text-right">
               giver
             </h1>
-            <h1 className="font-light text-7xl desktop:text-[192px] desktop:text-right">
+            <h1 className="font-light text-7xl desktop:text-[144px] desktop:text-right">
               first
             </h1>
           </div>

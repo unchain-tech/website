@@ -6,7 +6,7 @@ import lessoncards_wide from 'public/projects_wide.png';
 export const Projects = () => {
   return (
     <div id="start building" className="bg-brand-white text-brand-onyx py-16">
-      <div id="container" className="px-6 laptop:px-12 desktop:px-32">
+      <div id="container" className="px-6 desktop:px-32">
         <div id="title" className="pb-8">
           <h3 className="text-brand-red desktop:text-6xl">
             start learning and build
@@ -23,10 +23,10 @@ export const Projects = () => {
           </p>
         </div>
       </div>
-      <div className="block laptop:hidden">
+      <div className="block tablet:hidden">
         <Image src={lessoncards} className="w-full" alt="" priority={true} />
       </div>
-      <div className="hidden laptop:block">
+      <div className="hidden tablet:block">
         <Image
           src={lessoncards_wide}
           className="w-full"

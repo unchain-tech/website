@@ -32,12 +32,12 @@ export const Supporters: FC = () => {
   return (
     <div id="collaborators">
       <div id="container" className="py-8 desktop:py-16 px-6">
-        <h2 className="text-brand-yellow font-light text-center py-8">
+        <h2 className="text-brand-yellow text-center py-8">
           official supporters
         </h2>
         <div
           id="partners"
-          className="items-center justify-evenly grid gap-4 grid-cols-2 tablet:grid-cols-3"
+          className="items-center justify-evenly py-8 grid gap-4 grid-cols-2 tablet:grid-cols-3"
         >
           <PartnerLogo
             partner_name="ASTAR Network"

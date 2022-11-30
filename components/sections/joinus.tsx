@@ -47,7 +47,7 @@ export const Joinus = () => {
             <Image
               src={UNCHAIN_icon}
               alt="UNCHAIN logo"
-              className="absolute top-0 right-0"
+              className="absolute top-5 right-0"
               width={width! / 3}
               height={width! / 3}
             />

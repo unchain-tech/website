@@ -22,7 +22,7 @@ export const Values: FC = () => {
             </h1>
           </div>
 
-          <p className="text-sm leading-relaxed desktop:text-2xl w-3/4 desktop:w-1/3">
+          <p className="text-xs leading-relaxed desktop:text-lg w-4/5 desktop:w-1/3">
             自身の ”与えられるもの”
             を理解して、戦略的にGIVEできる人を応援するコミュニティです。ナレッジを、時間を、つながりをGIVEする文化を育むための仕組みは、コミュニティメンバーと共に日々アップデートされていきます。
           </p>

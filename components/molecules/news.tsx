@@ -43,7 +43,7 @@ export const News = () => {
   const newsdescriptions = [
     //"dApps開発を学ぶと、$ASTRがもらえる！UNCHAIN developer's grant 開始のお知らせ",
     '#Build2Earn on Astar Network - dAppを開発して1000$ASTRを獲得しよう！',
-    'BBB（Bug Bounty Bootcamp）開催のお知らせ - スマートコントラクトのセキュリティ技術を学び、バグを見つけて賞金獲得しよう！',
+    'BBB（Bug Bounty Bootcamp） - スマートコントラクトのセキュリティ技術を学び、バグを見つけて賞金獲得しよう！',
   ];
 
   return (

@@ -17,7 +17,7 @@ export const Projects: FC = () => {
       return (
         <Image
           src={lessoncards_wide}
-          className="w-full absolute top-64 laptop:top-48"
+          className="w-full"
           alt="UNCHAIN projects example"
           priority={true}
         />
@@ -26,7 +26,7 @@ export const Projects: FC = () => {
       return (
         <Image
           src={lessoncards_widest}
-          className="w-full absolute top-96 monitor:top-72"
+          className="w-full"
           alt="UNCHAIN projects example"
           priority={true}
         />
@@ -35,7 +35,10 @@ export const Projects: FC = () => {
   };
 
   return (
-    <div id="start building" className="bg-brand-white text-brand-onyx pt-16">
+    <div
+      id="start building"
+      className="bg-brand-white text-brand-onyx pt-10 laptop:pt-16"
+    >
       <div id="container" className="px-6 desktop:px-32">
         <div id="title" className="pb-8">
           <h3 className="text-brand-red desktop:text-6xl">
@@ -53,9 +56,12 @@ export const Projects: FC = () => {
           </p>
         </div>
       </div>
-      <div id="container">
-        {/* <BannerImage /> */}
-        <div id="red bloc" className="bg-brand-red h-0"></div>
+      <div id="container" className="relative">
+        <BannerImage />
+        <div
+          id="red bloc"
+          className="bg-brand-red h-0 tablet:h-40 tablet:-mt-36 laptop:-mt-60 laptop:h-64 desktop:-mt-56 desktop:h-60 monitor:-mt-96 monitor:h-96"
+        ></div>
       </div>
       <SupportedNetworks />
     </div>

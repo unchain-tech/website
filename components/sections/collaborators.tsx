@@ -33,7 +33,7 @@ export const Collaborators: FC = () => {
     <div id="collaborators">
       <div id="container" className="py-8 desktop:py-16 px-6">
         <h2 className="text-brand-yellow font-light text-center py-8">
-          our collaborators
+          official supporters
         </h2>
         <div
           id="partners"

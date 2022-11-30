@@ -10,7 +10,7 @@
     @apply font-dazzle text-5xl font-medium tracking-wider desktop:text-8xl;
   }
   h2 {
-    @apply font-dazzle text-3xl font-light tracking-wide desktop:text-5xl;
+    @apply font-dazzle text-xl font-light tracking-wide desktop:text-3xl;
   }
   h3 {
     @apply font-dazzle text-xl font-medium tracking-wide;

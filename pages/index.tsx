@@ -29,7 +29,7 @@ export const Home: FC = () => {
           height={640}
         />
 
-        <div id="body" className="pt-96 desktop:pt-96">
+        <div id="body">
           <Landing />
           <Services />
           <Values />

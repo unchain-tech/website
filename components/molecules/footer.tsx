@@ -57,7 +57,7 @@ export const Footer: FC = () => {
         </div>
       </div>
 
-      <div className="mx-auto mt-6 text-center text-sm laptop:text-base font-sans">
+      <div className="mx-auto mt-6 text-center text-sm desktop:text-base font-sans">
         {currentYear} &copy; {companyName}. All rights reserved.
       </div>
     </footer>

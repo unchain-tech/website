@@ -44,7 +44,7 @@ export const Layout: FC<Props> = ({ pageTitle, children }) => {
 
       <Header />
 
-      <main className="my-4">
+      <main className="py-4">
         <div className="page-main">{children}</div>
       </main>
 

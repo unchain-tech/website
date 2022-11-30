@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { FC } from 'react';
+
 import flowerbutton from '/public/flowerbutton.png';
 
-export const Services = () => {
+export const Services: FC = () => {
   const Card = ({ heading, description }: { [key: string]: string }) => {
     return (
       <div
@@ -24,10 +26,7 @@ export const Services = () => {
   };
   return (
     <div id="what we offer" className="bg-brand-yellow text-brand-onyx">
-      <div
-        id="container"
-        className="px-6 laptop:px-12 desktop:px-32 py-8 desktop:py-24"
-      >
+      <div id="container" className="px-6 desktop:px-32 py-8 desktop:py-24">
         <div
           id="sectiontitle"
           className="flex flex-col pb-8 desktop:flex-row desktop:space-x-6"
@@ -47,11 +46,11 @@ export const Services = () => {
           />
           <Card
             heading="共に学ぶコミュニティ"
-            description="プロジェクト型の学習コンテンツを通して、スマートコントラクトやweb開発の実践的なスキルを身につけることができます。"
+            description="同じ興味や志を持つ仲間を見つけ、互いの知見を共有し合うことで、切磋琢磨することができます。"
           />
           <Card
             heading="NFTで学習歴を証明"
-            description="プロジェクト型の学習コンテンツを通して、スマートコントラクトやweb開発の実践的なスキルを身につけることができます。"
+            description="各メンバーのコミュニティでの活動や貢献の証を、トークンを用いてブロックチェーン上に発行しています。"
           />
         </div>
 

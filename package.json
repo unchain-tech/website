@@ -2,7 +2,7 @@
   "name": "unchain_landingpage",
   "version": "1.0.0",
   "description": "UNCHAIN landing page",
-  "main": "app/layout.tsx",
+  "main": "pages/_app.tsx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shiftbase-inc/UNCHAIN-LP.git"

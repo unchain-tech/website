@@ -11,17 +11,17 @@ export const News = () => {
       <Link
         href={url}
         passHref={true}
-        className="py-4 hover:no-underline hover:text-brand-sky"
+        className="hover:no-underline hover:text-brand-sky"
         target="_blank"
       >
         <div className="hover:border border-brand-sky rounded-lg p-1">
-          <div className="flex flex-row py-2 justify-between">
-            <p className="font-sans truncate pr-8">{description}</p>
+          <div className="flex py-2 justify-between items-center">
+            <p className="font-sans truncate pr-6">{description}</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
-              className="h-8 stroke-brand-yellow"
+              className="w-8 h-8 min-w-max stroke-brand-yellow"
             >
               <path
                 strokeLinecap="round"
@@ -42,8 +42,8 @@ export const News = () => {
   ];
   const newsdescriptions = [
     //"dApps開発を学ぶと、$ASTRがもらえる！UNCHAIN developer's grant 開始のお知らせ",
-    `#Build2Earn on Astar Network - dAppを開発して1000$ASTRを獲得しよう！`,
-    'BBB (Bug Bounty Bootcamp) 開催のお知らせ - スマートコントラクトのセキュリティ技術を学び、バグを見つけて賞金獲得しよう！',
+    '#Build2Earn on Astar Network - dAppを開発して1000$ASTRを獲得しよう！',
+    'BBB（Bug Bounty Bootcamp）開催のお知らせ - スマートコントラクトのセキュリティ技術を学び、バグを見つけて賞金獲得しよう！',
   ];
 
   return (

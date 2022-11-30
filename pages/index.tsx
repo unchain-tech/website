@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { FC } from 'react';
 
 import Layout from 'components/layouts/baseLayout';
-import Collaborators from 'components/sections/collaborators';
 import Landing from 'components/sections/firstview';
 import Joinus from 'components/sections/joinus';
 import Projects from 'components/sections/projects';
 import Services from 'components/sections/services';
+import Supporters from 'components/sections/supporters';
 import Values from 'components/sections/values';
 import thumbnailNFT from 'public/thumbnail_nft.png';
 
@@ -34,7 +34,7 @@ export const Home: FC = () => {
           <Services />
           <Values />
           <Projects />
-          <Collaborators />
+          <Supporters />
           <Joinus />
         </div>
       </Layout>

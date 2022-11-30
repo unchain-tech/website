@@ -4,7 +4,7 @@ import { FC } from 'react';
 
 import { useWindowDimensions } from 'hooks/useWindowDimensions';
 
-export const Collaborators: FC = () => {
+export const Supporters: FC = () => {
   const { width } = useWindowDimensions();
 
   const PartnerLogo = ({
@@ -75,4 +75,4 @@ export const Collaborators: FC = () => {
   );
 };
 
-export default Collaborators;
+export default Supporters;

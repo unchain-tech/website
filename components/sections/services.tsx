@@ -55,7 +55,10 @@ export const Services: FC = () => {
         </div>
 
         <div id="button" className="mt-6 flex justify-center">
-          <Link href="https://airtable.com/shrKEXFRup9ZqF3GY" passHref={true}>
+          <Link
+            href="https://unchain-shiftbase.notion.site/web3-UNCHAIN-964d92e24cd045bcbdd8848203985ba7"
+            passHref={true}
+          >
             <button className="btn px-12 text-brand-white bg-neutral-700 hover:bg-brand-blue desktop:px-24 desktop:py-6">
               Learn more
             </button>

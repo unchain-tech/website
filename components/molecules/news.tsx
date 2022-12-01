@@ -21,7 +21,7 @@ export const News = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
-              className="w-8 h-8 min-w-max stroke-brand-yellow"
+              className="w-8 h-8 min-w-min stroke-brand-yellow"
             >
               <path
                 strokeLinecap="round"

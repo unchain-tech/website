@@ -60,7 +60,7 @@ export const Joinus = () => {
           className="flex justify-center hover:no-underline"
         >
           <button className="btn bg-brand-red hover:bg-brand-blue mt-16 desktop:mt-32 px-16 py-4 text-2xl">
-            Learn more
+            Apply for entry
           </button>
         </Link>
       </div>

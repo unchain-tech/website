@@ -12,7 +12,7 @@ const Chain: FC<{ chain: string; url: string }> = ({ chain, url }) => {
       <Image
         src={`/chain/${chain}.png`}
         alt={`${chain} logo`}
-        width={width! > 481 ? 220 : 50}
+        width={width! > 481 ? 240 : 120}
         height={60}
       />
     </Link>

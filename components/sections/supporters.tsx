@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { FC } from 'react';
 
@@ -15,29 +16,27 @@ export const Supporters: FC = () => {
     [key: string]: string;
   }) => {
     return (
-      <a href={partner_website} target="_blank" rel="noreferrer">
-        <div className="relative">
-          <Image
-            src={logo_image}
-            className="hover:cursor-pointer mx-auto"
-            width={width! > 481 ? 320 : 140}
-            height={140}
-            alt={`${partner_name} logo`}
-          />
-        </div>
-      </a>
+      <Link href={partner_website} target="_blank">
+        <Image
+          src={logo_image}
+          className="hover:cursor-pointer mx-auto"
+          width={width! > 481 ? 320 : 140}
+          height={60}
+          alt={`${partner_name} logo`}
+        />
+      </Link>
     );
   };
 
   return (
     <div id="collaborators">
-      <div id="container" className="py-8 desktop:py-16 px-6">
+      <div id="container" className="px-6 py-8 desktop:py-16">
         <h2 className="text-brand-yellow text-center py-8">
           official supporters
         </h2>
         <div
           id="partners"
-          className="items-center justify-evenly py-8 grid gap-4 grid-cols-2 tablet:grid-cols-3"
+          className="py-8 items-center grid gap-4 grid-cols-2 tablet:grid-cols-3"
         >
           <PartnerLogo
             partner_name="ASTAR Network"

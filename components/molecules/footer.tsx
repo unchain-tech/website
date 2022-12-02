@@ -10,8 +10,8 @@ export const Footer: FC = () => {
   const currentYear = new Date().getFullYear();
 
   const urls = [
-    'https://www.notion.so/unchain-shiftbase/20220228-437efe5314d64e0f965efe911b062ce2',
-    'https://www.notion.so/unchain-shiftbase/20220303-11d1b7d0e0384aa9912b6893decd51dc',
+    'https://unchain-shiftbase.notion.site/20220228-437efe5314d64e0f965efe911b062ce2',
+    'https://unchain-shiftbase.notion.site/20220303-11d1b7d0e0384aa9912b6893decd51dc',
     'https://shiftbase.xyz/about',
   ];
   const texts = ['Terms & Conditions', 'Privacy Policy', 'About shiftbase'];

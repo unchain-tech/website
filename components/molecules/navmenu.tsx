@@ -16,12 +16,19 @@ const Item: FC<{ href: string; text: string; newpage: boolean }> = ({
 }) => {
   return (
     <Link
-      className="w-full rounded-md border-2 border-neutral-500 bg-neutral-600 py-2 px-3 text-right font-sans font-semibold tracking-widest text-brand-white hover:bg-neutral-600 laptop:w-auto laptop:rounded-xl laptop:border-0 laptop:bg-transparent laptop:text-xl"
       href={href}
       passHref={true}
       target={newpage ? '_blank' : '_self'}
+      className="hover:no-underline"
     >
-      {text}
+      <div
+        className="py-2 px-3 rounded-md laptop:rounded-xl
+                  border laptop:border-0 laptop:hover:border border-brand-yellow
+                  font-sans font-semibold tracking-widest text-brand-white
+                bg-brand-onyx laptop:bg-transparent hover:bg-brand-onyx"
+      >
+        {text}
+      </div>
     </Link>
   );
 };

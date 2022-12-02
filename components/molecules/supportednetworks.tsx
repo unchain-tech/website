@@ -12,7 +12,7 @@ const Chain: FC<{ chain: string; url: string }> = ({ chain, url }) => {
       <Image
         src={`/chain/${chain}.png`}
         alt={`${chain} logo`}
-        width={width! > 481 ? 240 : 120}
+        width={width! > 481 ? 220 : 50}
         height={60}
       />
     </Link>
@@ -41,12 +41,23 @@ export const SupportedNetworks = () => {
   return (
     <div id="supported networks" className="bg-brand-white">
       <div id="container" className="overflow-x-hidden relative">
-        <div className="flex flex-row items-center px-1 py-2 laptop:p-4 space-x-2 laptop:space-x-8 animate-marquee">
+        <div
+          className="flex flex-row items-center
+                    px-1 py-2 laptop:p-4
+                    space-x-2 laptop:space-x-8
+                    animate-marquee"
+        >
           {chains.map((chain, index) => (
             <Chain key={`${chain} logo`} chain={chain} url={links[index]} />
           ))}
         </div>
-        <div className="absolute top-0 flex flex-row items-center px-1 py-2 laptop:p-4 space-x-2 laptop:space-x-8 animate-marquee2">
+        <div
+          className="absolute top-0
+                    flex flex-row items-center
+                    px-1 py-2 laptop:p-4
+                    space-x-2 laptop:space-x-8
+                    animate-marquee2"
+        >
           {chains.map((chain, index) => (
             <Chain key={`${chain} logo`} chain={chain} url={links[index]} />
           ))}

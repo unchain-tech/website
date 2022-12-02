@@ -4,7 +4,7 @@ import { FC } from 'react';
 
 import News from 'components/molecules/news';
 
-export const Landing: FC = () => {
+export const FirstView: FC = () => {
   return (
     <div id="firstview">
       <div
@@ -41,4 +41,4 @@ export const Landing: FC = () => {
   );
 };
 
-export default Landing;
+export default FirstView;

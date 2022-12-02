@@ -58,6 +58,7 @@ export const Services: FC = () => {
           <Link
             href="https://unchain-shiftbase.notion.site/web3-UNCHAIN-964d92e24cd045bcbdd8848203985ba7"
             passHref={true}
+            target="_blank"
           >
             <button className="btn px-12 text-brand-white bg-neutral-700 hover:bg-brand-blue desktop:px-24 desktop:py-6">
               Learn more

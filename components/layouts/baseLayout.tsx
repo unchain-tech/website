@@ -42,13 +42,11 @@ export const Layout: FC<Props> = ({ pageTitle, children }) => {
         <meta name="twitter:creator" content="@zsh0x" />
       </Head>
 
-      <Header />
-
-      <main className="py-4">
-        <div className="page-main">{children}</div>
+      <main>
+        <Header />
+        <div id="body">{children}</div>
+        <Footer />
       </main>
-
-      <Footer />
     </>
   );
 };

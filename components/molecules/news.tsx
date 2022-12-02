@@ -42,7 +42,7 @@ export const News = () => {
     'https://unchain-shiftbase.notion.site/UNCHAIN-Build2Earn-on-Astar-Network-5b25608cccd549dea4609ee9cb87b52a',
     'https://unchain-shiftbase.notion.site/UNCHAIN-Bug-Bounty-Bootcamp-BBB-Cohort1-52247e1e2f904f89a5022dd24aef9c73',
   ];
-  const newsdescriptions = [
+  const newsblurbs = [
     //"dApps開発を学ぶと、$ASTRがもらえる！UNCHAIN developer's grant 開始のお知らせ",
     '#Build2Earn on Astar Network - dAppを開発して1000$ASTRを獲得しよう！',
     'BBB（Bug Bounty Bootcamp） - スマートコントラクトのセキュリティ技術を学び、バグを見つけて賞金獲得しよう！',
@@ -51,11 +51,11 @@ export const News = () => {
   return (
     <div id="news container" className="py-8">
       <h2 className="text-brand-yellow py-4">NEWS</h2>
-      {newslinks.map((url, index) => (
+      {newsblurbs.map((blurb, index) => (
         <NewsItem
           key={`news ${index + 1}`}
-          url={url}
-          description={newsdescriptions[index]}
+          url={newslinks[index]}
+          description={blurb}
         />
       ))}
     </div>

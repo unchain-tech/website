@@ -24,7 +24,7 @@ export const Joinus = () => {
 
   return (
     <div id="Join us" className="relative bg-brand-onyx text-brand-white">
-      <div id="container" className="px-6 py-16">
+      <div id="container" className="px-6 py-16 space-y-8">
         <div id="slogan and logo" className="flex flex-row justify-between">
           <div id="slogan" className="py-4 flex flex-col">
             <Slogan text="Join" />
@@ -53,16 +53,17 @@ export const Joinus = () => {
             />
           )}
         </div>
-        <Link
-          href="https://airtable.com/shrKEXFRup9ZqF3GY"
-          passHref={true}
-          target="_blank"
-          className="flex justify-center hover:no-underline"
-        >
-          <button className="btn bg-brand-red hover:bg-brand-blue mt-16 desktop:mt-32 px-16 py-4 text-2xl">
-            Apply for entry
-          </button>
-        </Link>
+        <div className="flex justify-center hover:no-underline">
+          <Link
+            href="https://airtable.com/shrKEXFRup9ZqF3GY"
+            passHref={true}
+            target="_blank"
+          >
+            <button className="btn bg-brand-red hover:bg-brand-blue px-16 py-4 text-2xl">
+              Apply for entry
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

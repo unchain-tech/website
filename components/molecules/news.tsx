@@ -41,13 +41,11 @@ export const News = () => {
   const newslinks = [
     'https://unchain-shiftbase.notion.site/UNCHAIN-Build2Earn-on-Astar-Network-5b25608cccd549dea4609ee9cb87b52a',
     'https://unchain-shiftbase.notion.site/UNCHAIN-Bug-Bounty-Bootcamp-BBB-Cohort1-52247e1e2f904f89a5022dd24aef9c73',
-    'exampl.org',
   ];
   const newsdescriptions = [
     //"dApps開発を学ぶと、$ASTRがもらえる！UNCHAIN developer's grant 開始のお知らせ",
     '#Build2Earn on Astar Network - dAppを開発して1000$ASTRを獲得しよう！',
     'BBB（Bug Bounty Bootcamp） - スマートコントラクトのセキュリティ技術を学び、バグを見つけて賞金獲得しよう！',
-    'tests',
   ];
 
   return (

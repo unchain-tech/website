@@ -32,7 +32,7 @@
 
 @layer components {
   .header {
-    @apply fixed top-0 z-50 flex w-full flex-row items-center justify-between shadow-md backdrop-blur-sm;
+    @apply fixed top-0 z-50 flex w-full flex-row items-center justify-between bg-brand-onyx/60 shadow-md backdrop-blur-sm;
   }
   .btn {
     @apply cursor-pointer rounded-2xl py-3 px-6 drop-shadow-xl;

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { FC } from 'react';
 
-import shiftbase_logo from 'public/sbicon.png';
+import shiftbase_logo from 'public/sb_logoname.png';
 
 export const Footer: FC = () => {
   const companyName = '株式会社shiftbase';
@@ -26,7 +26,7 @@ export const Footer: FC = () => {
           <Image
             src={shiftbase_logo}
             alt="shiftbase logo"
-            width={80}
+            width={240}
             height={80}
           />
           <h2 id="company" className="font-sans font-medium">

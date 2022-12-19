@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 import { FC } from 'react';
 
-import shiftbase_logo from 'public/sbicon.png';
+import shiftbase_logo from 'public/sb_logoname.png';
 
 export const Footer: FC = () => {
-  const companyName = 'shiftbase, inc';
+  const companyName = '株式会社shiftbase';
   const currentYear = new Date().getFullYear();
 
   const urls = [
@@ -26,11 +26,11 @@ export const Footer: FC = () => {
           <Image
             src={shiftbase_logo}
             alt="shiftbase logo"
-            width={80}
+            width={240}
             height={80}
           />
           <h2 id="company" className="font-sans font-medium">
-            shiftbase, Inc.
+            株式会社shiftbase
           </h2>
           <p id="address" className="font-sans text-lg">
             〒160-0011 新宿区若葉1-7-15

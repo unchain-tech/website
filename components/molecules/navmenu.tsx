@@ -9,7 +9,7 @@ import type { FC } from 'react';
 import { useLocale } from 'hooks/useLocale';
 import { useWindowDimensions } from 'hooks/useWindowDimensions';
 
-const Item: FC<{ href: string; text: string; newpage: boolean }> = ({
+const Item: FC<{ href: string; text: string; newpage?: boolean }> = ({
   href,
   text,
   newpage,
@@ -50,19 +50,11 @@ export const NavMenu: FC = () => {
           For clients
         </Link> */}
 
-        {/* shiftbase */}
-        <Item
-          href="https://shiftbase.xyz"
-          text="shiftbase, inc."
-          newpage={true}
-        />
+        {/* apply */}
+        <Item href="/api/apply" text="Apply" />
 
         {/* contact */}
-        <Item
-          href="https://shiftbase.xyz/contact"
-          text="Contact"
-          newpage={true}
-        />
+        <Item href="https://shiftbase.xyz/contact" text="Contact" newpage />
 
         {/* language switch */}
         {/* <Link

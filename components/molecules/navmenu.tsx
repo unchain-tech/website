@@ -50,7 +50,10 @@ export const NavMenu: FC = () => {
           For clients
         </Link> */}
 
-        {/* apply */}
+        {/* TODO: add after portal 2nd release */}
+        {/* <Item href="https://app.unchain.tech/" text="Start Building" newpage /> */}
+
+        {/* TODO: remove after portal 2nd release */}
         <Item href="/api/apply" text="Apply" />
 
         {/* contact */}

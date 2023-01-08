@@ -54,11 +54,8 @@ export const Joinus = () => {
           )}
         </div>
         <div className="flex justify-center hover:no-underline">
-          <Link
-            href="https://airtable.com/shrKEXFRup9ZqF3GY"
-            passHref={true}
-            target="_blank"
-          >
+          {/* TODO: change link to portal after 2nd release */}
+          <Link href="/api/apply" passHref>
             <button className="btn bg-brand-red hover:bg-brand-blue px-16 py-4 text-2xl">
               Apply for entry
             </button>

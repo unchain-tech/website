@@ -2,7 +2,7 @@
   "extends": ["plugin:@typescript-eslint/recommended", "next", "prettier"],
   "rules": {
     "import/order": [
-      "error",
+      "warn",
       {
         "alphabetize": {
           "order": "asc"

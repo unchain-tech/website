@@ -28,7 +28,7 @@ export const Values: FC = () => {
           </p>
 
           <Link
-            href="https://unchain-shiftbase.notion.site/web3-UNCHAIN-964d92e24cd045bcbdd8848203985ba7"
+            href="https://unchain-shiftbase.notion.site/UNCHAIN-Core-Values-625cf677042145ce883889d479a45cf4"
             passHref={true}
             target="_blank"
           >

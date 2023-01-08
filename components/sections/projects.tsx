@@ -56,7 +56,7 @@ export const Projects: FC = () => {
         <div
           id="red bloc"
           className="bg-brand-red -mt-24 h-28 tablet:h-40 tablet:-mt-36 laptop:-mt-60 laptop:h-64 desktop:-mt-56 desktop:h-60 monitor:-mt-96 monitor:h-96"
-        ></div>
+        />
       </div>
       <SupportedNetworks />
     </div>

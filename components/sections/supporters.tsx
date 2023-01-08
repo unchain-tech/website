@@ -40,7 +40,7 @@ export const Supporters: FC = () => {
         >
           <PartnerLogo
             partner_name="ASTAR Network"
-            logo_image="https://raw.githubusercontent.com/AstarNetwork/brand-assets/7ab80a37976bf1015be8c9e257af56d1c52f6bd1/Astar%20Identity/Astar_landscape.svg"
+            logo_image="/partners/astar.png"
             partner_website="https://astar.network/"
           />
           <PartnerLogo
@@ -55,12 +55,12 @@ export const Supporters: FC = () => {
           />
           <PartnerLogo
             partner_name="NEAR Japan"
-            logo_image="https://raw.githubusercontent.com/near/docs/master/website/static/img/near_logo_white.svg"
+            logo_image="/partners/nearjapan.png"
             partner_website="https://near.org/"
           />
           <PartnerLogo
             partner_name="Polygon Technologies"
-            logo_image="https://raw.githubusercontent.com/maticnetwork/matic-docs/6a2c7acfd44da03e34b7e34d25a419bb5841fbe9/static/img/polygon/polygon-logo-inverted.png"
+            logo_image="/partners/polygon.png"
             partner_website="https://polygon.technology/"
           />
           <PartnerLogo

@@ -86,13 +86,10 @@ export default async function handler(
 
       try {
         const newRecords = await table_unchainApplication.create(newApplicant);
+        const inviteCode = process.env.DISCORD_REFCODE;
 
         return res.status(201).json({
-          message: `Application successful. ${
-            newRecords._rawJson.fields.yearsCoding >= 3
-              ? 'Welcome to our community! Discord invite: https://discord.gg/'
-              : 'If you are selected to join the community, you will be contacted soon.'
-          }`,
+          message: `Application successful. Welcome to UNCHAIN Academy! Invite link: https://discord.gg/${inviteCode} 🎉 `,
           timestamp: newRecords._rawJson.createdTime,
           fields: newRecords._rawJson.fields,
         });

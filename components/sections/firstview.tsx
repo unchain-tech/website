@@ -25,7 +25,6 @@ export const FirstView: FC = () => {
             UNCHAINは、NFTの作成やdAppsの構築など、プロジェクト開発を通してweb3を学び、実践経験を積みながら自分のアイデアを形にする力を身につけるエンジニアのためのコミュニティです。
           </p>
 
-          {/* TODO: change link to portal after 2nd release */}
           <Link href="/api/apply" passHref>
             <button className="btn bg-brand-red hover:bg-brand-blue my-2 desktop:my-4">
               Join the community

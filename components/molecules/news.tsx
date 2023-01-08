@@ -39,13 +39,14 @@ export const News = () => {
   };
 
   const newslinks = [
+    'https://unchain-shiftbase.notion.site/web3-34bb72d36ded49229bf2cc07aab34da5',
     'https://unchain-shiftbase.notion.site/UNCHAIN-Build2Earn-on-Astar-Network-5b25608cccd549dea4609ee9cb87b52a',
-    'https://unchain-shiftbase.notion.site/UNCHAIN-Bug-Bounty-Bootcamp-BBB-Cohort1-52247e1e2f904f89a5022dd24aef9c73',
+    'https://unchain-shiftbase.notion.site/UNCHAIN-Bug-Bounty-9ab7e3b89ae54791a048924bf9efac84',
   ];
   const newsblurbs = [
-    //"dApps開発を学ぶと、$ASTRがもらえる！UNCHAIN developer's grant 開始のお知らせ",
-    '#Build2Earn on Astar Network - dAppを開発して1000$ASTRを獲得しよう！',
-    'BBB（Bug Bounty Bootcamp） - スマートコントラクトのセキュリティ技術を学び、バグを見つけて賞金獲得しよう！',
+    "UNCHAIN developer's grant - 進捗に応じて、最大 2,000,000 $JPYC の開発資金を獲得しよう！",
+    '#Build2Earn on Astar Network - dAppを開発して 1000 $ASTR を獲得しよう！',
+    'Bug Bounty Program - スマートコントラクトのセキュリティ技術を学び、バグを見つけて賞金獲得しよう！',
   ];
 
   return (

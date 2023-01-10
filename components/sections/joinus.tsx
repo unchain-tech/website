@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FC } from 'react';
 
 import { useWindowDimensions } from 'hooks/useWindowDimensions';
-import UNCHAIN_icon from 'public/UNCHAIN_icon_white.png';
+import UNCHAIN_icon from 'public/UNCHAIN_icon.png';
 
 export const Joinus = () => {
   const { width } = useWindowDimensions();

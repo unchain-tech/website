@@ -2,16 +2,13 @@ import Link from 'next/link';
 
 import { FC } from 'react';
 
-import News from 'components/molecules/news';
+import SupportedNetworks from 'components/molecules/supportednetworks';
 
 export const FirstView: FC = () => {
   return (
     <div id="firstview">
-      <div
-        id="section container"
-        className="pt-96 desktop:pt-96 pb-8 px-6 desktop:px-32"
-      >
-        <div id="first view" className="pb-8">
+      <div id="section container" className="h-screen">
+        <div id="first view" className="px-6 desktop:px-32 absolute bottom-48">
           <div id="slogan" className="pt-8 pb-4">
             <h1 className="text-brand-yellow">UNCHAIN</h1>
             <h1>your</h1>
@@ -22,16 +19,19 @@ export const FirstView: FC = () => {
             id="blurb"
             className="text-xs desktop:text-lg py-2 desktop:py-4 w-5/6 desktop:w-1/2"
           >
-            UNCHAINは、NFTの作成やdAppsの構築など、プロジェクト開発を通してweb3を学び、実践経験を積みながら自分のアイデアを形にする力を身につけるエンジニアのためのコミュニティです。
+            UNCHAINは、プロジェクト開発を通して技術を学び、実践経験を積むことで自分のアイデアを形にする力を身につけたい、エンジニアのための学習サービス
+            & コミュニティです。
           </p>
 
-          <Link href="/api/apply" passHref>
-            <button className="btn bg-brand-red hover:bg-brand-blue my-2 desktop:my-4">
-              Join the community
+          <Link href="https://app.unchain.tech/" passHref>
+            <button className="btn bg-brand-red hover:bg-brand-blue my-2 desktop:my-4 px-12">
+              Start Building
             </button>
           </Link>
         </div>
-        <News />
+        <div className="absolute bottom-0">
+          <SupportedNetworks />
+        </div>
       </div>
     </div>
   );

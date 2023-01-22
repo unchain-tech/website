@@ -8,7 +8,10 @@ export const FirstView: FC = () => {
   return (
     <div id="firstview">
       <div id="section container" className="h-screen">
-        <div id="first view" className="px-6 desktop:px-32 absolute bottom-48">
+        <div
+          id="first view"
+          className="px-6 desktop:px-32 absolute bottom-16 laptop:bottom-24 desktop:bottom-48"
+        >
           <div id="slogan" className="pt-8 pb-4">
             <h1 className="text-brand-yellow">UNCHAIN</h1>
             <h1>your</h1>
@@ -29,9 +32,9 @@ export const FirstView: FC = () => {
             </button>
           </Link>
         </div>
-        <div className="absolute bottom-0">
-          <SupportedNetworks />
-        </div>
+      </div>
+      <div className="absolute bottom-0">
+        <SupportedNetworks />
       </div>
     </div>
   );

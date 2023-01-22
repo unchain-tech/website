@@ -51,9 +51,8 @@ export const NavMenu: FC = () => {
         </Link> */}
 
         {/* TODO: add after portal 2nd release */}
-        <Item href="https://app.unchain.tech/" text="Start Building" />
-
-        <Item href="https://shiftbase.xyz/" text="shiftbase, Inc." newpage />
+        <Item href="https://app.unchain.tech/" text="Login" />
+        <Item href="https://app.unchain.tech/" text="Signup" />
 
         {/* contact */}
         <Item href="https://shiftbase.xyz/contact" text="Contact" newpage />

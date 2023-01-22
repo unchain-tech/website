@@ -31,7 +31,7 @@ export const Supporters: FC = () => {
   return (
     <div id="collaborators">
       <div id="container" className="px-6 py-8 desktop:py-16">
-        <h2 className="text-brand-yellow text-center py-8">
+        <h2 className="text-brand-yellow text-center py-8 text-4xl desktop:text-6xl">
           official supporters
         </h2>
         <div

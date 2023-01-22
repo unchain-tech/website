@@ -8,7 +8,6 @@ import Joinus from 'components/sections/joinus';
 import Projects from 'components/sections/projects';
 import Services from 'components/sections/services';
 import Supporters from 'components/sections/supporters';
-import Values from 'components/sections/values';
 import thumbnailNFT from 'public/thumbnail_nft.png';
 
 export const Home: FC = () => {
@@ -24,9 +23,8 @@ export const Home: FC = () => {
 
       <div id="body">
         <FirstView />
-        <Services />
-        <Values />
         <Projects />
+        <Services />
         <Supporters />
         <Joinus />
       </div>

@@ -3,8 +3,6 @@ import Link from 'next/link';
 
 import { FC } from 'react';
 
-import flowerbutton from '/public/flowerbutton.png';
-
 export const Services: FC = () => {
   const Card = ({
     iconType,

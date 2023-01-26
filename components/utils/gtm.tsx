@@ -1,6 +1,14 @@
 import Script from 'next/script';
 import React from 'react';
 
+export const googleTagManagerId =
+  process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID || '';
+
+declare global {
+  interface Window {
+    dataLayer: Record<string, unknown>[];
+  }
+}
 
 type Props = {
   googleTagManagerId: string;

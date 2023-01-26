@@ -7,7 +7,7 @@ import Document, {
   DocumentInitialProps,
 } from 'next/document';
 import React from 'react';
-import { googleTagManagerId } from '../src/lib/gtag';
+import { googleTagManagerId } from 'components/utils/gtm';
 
 export default class CustomDocument extends Document {
   static async getInitialProps(

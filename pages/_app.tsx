@@ -1,5 +1,4 @@
-import { googleTagManagerId } from '@/lib/gtag';
-import GoogleTagManager from 'components/utils/gtm';
+import GoogleTagManager, { googleTagManagerId } from 'components/utils/gtm';
 import { AppProps } from 'next/app';
 import '/public/styles/globals.css';
 

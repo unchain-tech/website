@@ -49,7 +49,7 @@ export const Joinus = () => {
         </div>
 
         <div className="flex justify-center hover:no-underline">
-          <Link href="/api/apply" passHref>
+          <Link id="join_community" href="/api/apply" passHref>
             <button className="btn bg-brand-red hover:bg-brand-blue px-16 py-4 text-2xl">
               Join the Community
             </button>

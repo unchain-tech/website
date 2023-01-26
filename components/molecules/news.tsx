@@ -3,12 +3,14 @@ import Link from 'next/link';
 import { FC } from 'react';
 
 export const News = () => {
-  const NewsItem: FC<{ url: string; description: string }> = ({
+  const NewsItem: FC<{ id: string; url: string; description: string }> = ({
+    id,
     url,
     description,
   }) => {
     return (
       <Link
+        id={id}
         href={url}
         passHref={true}
         className="hover:no-underline hover:text-brand-sky"
@@ -38,6 +40,7 @@ export const News = () => {
     );
   };
 
+  const ids = ['news_grant', 'news_astar', 'news_bug_bounty'];
   const newslinks = [
     'https://unchain-shiftbase.notion.site/web3-34bb72d36ded49229bf2cc07aab34da5',
     'https://unchain-shiftbase.notion.site/UNCHAIN-Build2Earn-on-Astar-Network-5b25608cccd549dea4609ee9cb87b52a',
@@ -55,6 +58,7 @@ export const News = () => {
       {newsblurbs.map((blurb, index) => (
         <NewsItem
           key={`news ${index + 1}`}
+          id={ids[index]}
           url={newslinks[index]}
           description={blurb}
         />

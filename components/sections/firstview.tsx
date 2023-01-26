@@ -28,7 +28,7 @@ export const FirstView: FC = () => {
           & コミュニティです。
         </p>
 
-        <Link href="https://app.unchain.tech/" passHref>
+        <Link id="start_building" href="https://app.unchain.tech/" passHref>
           <button className="btn bg-brand-red hover:bg-brand-blue my-2 desktop:my-4 px-12">
             Start Building
           </button>

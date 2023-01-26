@@ -9,13 +9,15 @@ import type { FC } from 'react';
 import { useLocale } from 'hooks/useLocale';
 import { useWindowDimensions } from 'hooks/useWindowDimensions';
 
-const Item: FC<{ href: string; text: string; newpage?: boolean }> = ({
-  href,
-  text,
-  newpage,
-}) => {
+const Item: FC<{
+  id: string;
+  href: string;
+  text: string;
+  newpage?: boolean;
+}> = ({ id, href, text, newpage }) => {
   return (
     <Link
+      id={id}
       href={href}
       passHref={true}
       target={newpage ? '_blank' : '_self'}
@@ -51,11 +53,16 @@ export const NavMenu: FC = () => {
         </Link> */}
 
         {/* TODO: add after portal 2nd release */}
-        <Item href="https://app.unchain.tech/" text="Login" />
-        <Item href="https://app.unchain.tech/" text="Signup" />
+        <Item id="login" href="https://app.unchain.tech/" text="Login" />
+        <Item id="signup" href="https://app.unchain.tech/" text="Signup" />
 
         {/* contact */}
-        <Item href="https://shiftbase.xyz/contact" text="Contact" newpage />
+        <Item
+          id="contact"
+          href="https://shiftbase.xyz/contact"
+          text="Contact"
+          newpage
+        />
 
         {/* language switch */}
         {/* <Link

@@ -47,14 +47,12 @@ export const NavMenu: FC = () => {
         id="nav menu"
         className="absolute inset-y-16 right-4 flex flex-col items-end space-y-1 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-y-0 laptop:space-x-6"
       >
-        {/* for clients */}
-        {/* <Link className="header-menuitem" href="/clients">
-          For clients
-        </Link> */}
-
-        {/* TODO: add after portal 2nd release */}
+        {/* Portal */}
         <Item id="login" href="https://app.unchain.tech/" text="Login" />
         <Item id="signup" href="https://app.unchain.tech/" text="Signup" />
+
+        {/* Discord */}
+        <Item id="discord" href="/api/apply" text="Join Discord" />
 
         {/* contact */}
         <Item

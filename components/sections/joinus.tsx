@@ -53,7 +53,7 @@ export const Joinus = () => {
           <Link id="join_community" href="/api/apply" passHref>
             <button className="btn bg-brand-red hover:bg-brand-blue px-16 py-4 text-2xl flex items-center space-x-2">
               <SiDiscord />
-              <p>Join our Discord</p>
+              <p>Apply to join our Discord</p>
             </button>
           </Link>
         </div>

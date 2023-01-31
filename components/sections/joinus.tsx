@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { FC } from 'react';
+import { SiDiscord } from 'react-icons/si';
 
 import News from 'components/molecules/news';
 import { useWindowDimensions } from 'hooks/useWindowDimensions';
@@ -50,8 +51,9 @@ export const Joinus = () => {
 
         <div className="flex justify-center hover:no-underline">
           <Link id="join_community" href="/api/apply" passHref>
-            <button className="btn bg-brand-red hover:bg-brand-blue px-16 py-4 text-2xl">
-              Apply to join our Discord
+            <button className="btn bg-brand-red hover:bg-brand-blue px-16 py-4 text-2xl flex items-center space-x-2">
+              <SiDiscord />
+              <p>Apply to join our Discord</p>
             </button>
           </Link>
         </div>

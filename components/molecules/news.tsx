@@ -40,26 +40,26 @@ export const News = () => {
     );
   };
 
-  const ids = ['news_grant', 'news_astar', 'news_bug_bounty'];
-  const newslinks = [
+  const ids = ['news_shinchoku', 'news_grant', 'news_astar', 'news_bug_bounty'];
+  const officiallinks = [
     'https://unchain-shiftbase.notion.site/web3-34bb72d36ded49229bf2cc07aab34da5',
     'https://unchain-shiftbase.notion.site/UNCHAIN-Build2Earn-on-Astar-Network-5b25608cccd549dea4609ee9cb87b52a',
     'https://unchain-shiftbase.notion.site/UNCHAIN-Bug-Bounty-9ab7e3b89ae54791a048924bf9efac84',
   ];
-  const newsblurbs = [
+  const officiallink_blurbs = [
     "UNCHAIN developer's grant - 進捗に応じて、最大 2,000,000 $JPYC の開発資金を獲得しよう！",
     '#Build2Earn on Astar Network - dAppを開発して 1000 $ASTR を獲得しよう！',
     'Bug Bounty Program - スマートコントラクトのセキュリティ技術を学び、バグを見つけて賞金獲得しよう！',
   ];
 
   return (
-    <div id="news container" className="py-8">
-      <h2 className="text-brand-yellow py-4">NEWS</h2>
-      {newsblurbs.map((blurb, index) => (
+    <div id="official links container" className="py-8">
+      <h2 className="text-brand-yellow py-4">LATEST</h2>
+      {officiallink_blurbs.map((blurb, index) => (
         <NewsItem
           key={`news ${index + 1}`}
           id={ids[index]}
-          url={newslinks[index]}
+          url={officiallinks[index]}
           description={blurb}
         />
       ))}

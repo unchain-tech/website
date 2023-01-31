@@ -51,7 +51,7 @@ export const Joinus = () => {
         <div className="flex justify-center hover:no-underline">
           <Link id="join_community" href="/api/apply" passHref>
             <button className="btn bg-brand-red hover:bg-brand-blue px-16 py-4 text-2xl">
-              Join the Community
+              Apply to join our Discord
             </button>
           </Link>
         </div>

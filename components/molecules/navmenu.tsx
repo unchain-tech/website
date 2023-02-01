@@ -51,9 +51,6 @@ export const NavMenu: FC = () => {
         <Item id="login" href="https://app.unchain.tech/" text="Login" />
         <Item id="signup" href="https://app.unchain.tech/" text="Signup" />
 
-        {/* Discord */}
-        <Item id="discord" href="/api/apply" text="Apply Discord" />
-
         {/* contact */}
         <Item
           id="contact"

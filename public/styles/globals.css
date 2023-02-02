@@ -16,7 +16,7 @@
     @apply font-dazzle text-xl font-medium tracking-wide;
   }
   a {
-    @apply font-dazzle text-base font-light hover:underline desktop:text-xl desktop:hover:text-brand-yellow;
+    @apply font-dazzle text-base font-light hover:underline desktop:text-xl;
   }
   p {
     @apply text-base font-normal leading-relaxed tracking-wider desktop:text-xl;

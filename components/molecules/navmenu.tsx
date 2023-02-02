@@ -25,7 +25,7 @@ const Item: FC<{
     >
       <div
         className="py-2 px-3 rounded-md laptop:rounded-xl
-                  outline laptop:outline-0 laptop:hover:outline-1 outline-brand-yellow
+                  outline outline-1 laptop:outline-0 laptop:hover:outline-1 outline-brand-yellow
                   font-sans font-semibold tracking-widest text-brand-white
                 bg-brand-onyx laptop:bg-transparent hover:bg-brand-onyx"
       >

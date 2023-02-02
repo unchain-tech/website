@@ -43,10 +43,10 @@ export const News: FC = (
                     alt="article thumbnail"
                   />
                   <div className="flex flex-col space-y-4 p-2">
-                    <p className="text-lg font-medium laptop:text-2xl">
+                    <p className="text-lg font-medium laptop:text-2xl font-sans">
                       {d.meta.title.split('|')[0]}
                     </p>
-                    <p className="text-base">
+                    <p className="text-base font-sans">
                       {d.meta.description.slice(0, 75)}...
                     </p>
                   </div>
@@ -71,14 +71,7 @@ export const getStaticProps: GetStaticProps = async () => {
   ];
 
   const metadataList = await Promise.all(
-    newsURLs.map(async (x, i) => {
-      const res = await fetch(`https://api.urlmeta.org/?url=${encodeURI(x)}`, {
-        headers: {
-          Authorization: Buffer.from(
-            `dafav79942@cosaxu.com:${process.env.LINKPREVIEW_API_KEY}`,
-          ).toString('base64'),
-        },
-      });
+    newsURLs.map(async (x) => {
       const json: {
         meta: {
           site: {
@@ -98,7 +91,14 @@ export const getStaticProps: GetStaticProps = async () => {
           locale?: string;
         };
         result: string;
-      } = await res.json();
+      } = await fetch(`https://api.urlmeta.org/?url=${encodeURI(x)}`, {
+        headers: {
+          Authorization: Buffer.from(
+            `dafav79942@cosaxu.com:${process.env.LINKPREVIEW_API_KEY}`,
+          ).toString('base64'),
+        },
+      }).then((res) => res.json());
+
       return json;
     }),
   );

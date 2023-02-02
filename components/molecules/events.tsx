@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 import { FC } from 'react';
 
-export const News = () => {
-  const NewsItem: FC<{ id: string; url: string; description: string }> = ({
+export const Events = () => {
+  const EventItem: FC<{ id: string; url: string; description: string }> = ({
     id,
     url,
     description,
@@ -16,7 +16,7 @@ export const News = () => {
         className="hover:no-underline hover:text-brand-sky"
         target="_blank"
       >
-        <div className="hover:border border-brand-sky rounded-lg p-1">
+        <div className="hover:outline outline-1 outline-brand-sky rounded-lg p-1">
           <div className="flex py-2 justify-between">
             <p className="font-sans truncate pr-6">{description}</p>
             <div>
@@ -54,10 +54,10 @@ export const News = () => {
 
   return (
     <div id="official links container" className="py-8">
-      <h2 className="text-brand-yellow py-4">LATEST</h2>
+      <h2 className="text-brand-yellow py-4">EVENTS</h2>
       {officiallink_blurbs.map((blurb, index) => (
-        <NewsItem
-          key={`news ${index + 1}`}
+        <EventItem
+          key={`Event ${index + 1}`}
           id={ids[index]}
           url={officiallinks[index]}
           description={blurb}
@@ -67,4 +67,4 @@ export const News = () => {
   );
 };
 
-export default News;
+export default Events;

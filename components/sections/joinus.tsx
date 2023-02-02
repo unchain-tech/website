@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { FC } from 'react';
 
-import News from 'components/molecules/news';
+import Events from 'components/molecules/events';
 import { useWindowDimensions } from 'hooks/useWindowDimensions';
 import UNCHAIN_icon from 'public/UNCHAIN_icon.png';
 
@@ -26,7 +26,7 @@ export const Joinus = () => {
   return (
     <div id="Join us" className="relative bg-brand-onyx text-brand-white">
       <div id="container" className="px-6 space-y-8 pb-16">
-        <News />
+        <Events />
         <div
           id="slogan and logo"
           className="pt-16 flex flex-row justify-between"

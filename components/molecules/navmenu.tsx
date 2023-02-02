@@ -25,7 +25,7 @@ const Item: FC<{
     >
       <div
         className="py-2 px-3 rounded-md laptop:rounded-xl
-                  border laptop:border-0 laptop:hover:border border-brand-yellow
+                  outline laptop:outline-0 laptop:hover:outline-1 outline-brand-yellow
                   font-sans font-semibold tracking-widest text-brand-white
                 bg-brand-onyx laptop:bg-transparent hover:bg-brand-onyx"
       >
@@ -48,8 +48,8 @@ export const NavMenu: FC = () => {
         className="absolute inset-y-16 right-4 flex flex-col items-end space-y-1 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-y-0 laptop:space-x-6"
       >
         {/* Portal */}
-        <Item id="login" href="https://app.unchain.tech/" text="Login" />
-        <Item id="signup" href="https://app.unchain.tech/" text="Signup" />
+        <Item id="start" href="https://app.unchain.tech/" text="Start" />
+        <Item id="news" href="/news" text="News" />
 
         {/* contact */}
         <Item

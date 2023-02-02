@@ -1,38 +1,38 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import AirtableError from 'airtable/lib/airtable_error';
-import { table_unchainApplication } from 'utils/airtable';
+// import AirtableError from 'airtable/lib/airtable_error';
+// import { table_unchainApplication } from 'utils/airtable';
 
-type SubmitData = {
-  message: string;
-  submit: {
-    name: string;
-    email: string;
-    discord: string;
-    walletAddress: string;
-    github?: string;
-    twitter?: string;
-    yearsCoding: number;
-    referral: string;
-    agreeToTermsAndPolicy: boolean;
-  };
-};
+// type SubmitData = {
+//   message: string;
+//   submit: {
+//     name: string;
+//     email: string;
+//     discord: string;
+//     walletAddress: string;
+//     github?: string;
+//     twitter?: string;
+//     yearsCoding: number;
+//     referral: string;
+//     agreeToTermsAndPolicy: boolean;
+//   };
+// };
 
-function validateEmail(email: string) {
-  const re =
-    /^([a-zA-Z0-9_-]+(?:.[a-zA-Z0-9_-]+)*)@((?:[a-zA-Z0-9_-]+.)*[a-zA-Z0-9_][a-zA-Z0-9_-]{0,66})[.]([a-z]{2,6}(?:.[a-z]{2})?)$/;
-  return re.test(email);
-}
+// function validateEmail(email: string) {
+//   const re =
+//     /^([a-zA-Z0-9_-]+(?:.[a-zA-Z0-9_-]+)*)@((?:[a-zA-Z0-9_-]+.)*[a-zA-Z0-9_][a-zA-Z0-9_-]{0,66})[.]([a-z]{2,6}(?:.[a-z]{2})?)$/;
+//   return re.test(email);
+// }
 
-function validateDiscord(discord: string) {
-  const re = /^.{3,32}#[0-9]{4}$/;
-  return re.test(discord);
-}
+// function validateDiscord(discord: string) {
+//   const re = /^.{3,32}#[0-9]{4}$/;
+//   return re.test(discord);
+// }
 
-function validateWalletAddress(walletAddress: string) {
-  const re = /^0x[a-fA-F0-9]{40}$/;
-  return re.test(walletAddress);
-}
+// function validateWalletAddress(walletAddress: string) {
+//   const re = /^0x[a-fA-F0-9]{40}$/;
+//   return re.test(walletAddress);
+// }
 
 export default async function handler(
   req: NextApiRequest,

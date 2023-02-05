@@ -14,12 +14,12 @@ export const Values: FC = () => {
 
         <div id="body" className="space-y-4">
           <div id="heading">
-            <h1 className="font-light text-7xl desktop:text-[144px] desktop:text-right">
+            <h2 className="font-light text-7xl desktop:text-[144px] desktop:text-right">
               giver
-            </h1>
-            <h1 className="font-light text-7xl desktop:text-[144px] desktop:text-right">
+            </h2>
+            <h2 className="font-light text-7xl desktop:text-[144px] desktop:text-right">
               first
-            </h1>
+            </h2>
           </div>
 
           <p className="text-xs leading-relaxed desktop:text-lg w-4/5 desktop:w-1/3">

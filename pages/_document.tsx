@@ -1,12 +1,14 @@
 import Document, {
   DocumentContext,
+  DocumentInitialProps,
   Head,
   Html,
   Main,
   NextScript,
-  DocumentInitialProps,
 } from 'next/document';
+
 import React from 'react';
+
 import { googleTagManagerId } from 'components/utils/gtm';
 
 export default class CustomDocument extends Document {

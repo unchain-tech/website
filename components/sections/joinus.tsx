@@ -15,11 +15,11 @@ export const Joinus = () => {
     text,
   }) => {
     return (
-      <h1
+      <h2
         className={`font-light text-[84px] laptop:text-[112px] desktop:text-[144px] leading-none z-10 ${className}`}
       >
         {text}
-      </h1>
+      </h2>
     );
   };
 

@@ -40,7 +40,7 @@ export const Events = () => {
     );
   };
 
-  const ids = ['news_shinchoku', 'news_grant', 'news_astar', 'news_bug_bounty'];
+  const ids = ['event_shinchoku', 'event_astar', 'event_bugbounty'];
   const officiallinks = [
     'https://unchain-shiftbase.notion.site/web3-34bb72d36ded49229bf2cc07aab34da5',
     'https://unchain-shiftbase.notion.site/UNCHAIN-Build2Earn-on-Astar-Network-5b25608cccd549dea4609ee9cb87b52a',

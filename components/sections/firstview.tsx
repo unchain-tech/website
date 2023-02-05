@@ -17,7 +17,6 @@ export const FirstView: FC = () => {
         <div id="slogan" className="pt-8 pb-4">
           <h1 className="text-brand-yellow">
             UNCHAIN
-            <br />
             <div className="text-white">your</div>
             <div className="text-white">potential.</div>
           </h1>

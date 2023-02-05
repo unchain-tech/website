@@ -15,9 +15,12 @@ export const FirstView: FC = () => {
         className="px-6 desktop:px-32 absolute bottom-16 laptop:bottom-24 desktop:bottom-48"
       >
         <div id="slogan" className="pt-8 pb-4">
-          <h1 className="text-brand-yellow">UNCHAIN</h1>
-          <h1>your</h1>
-          <h1 className="">potential.</h1>
+          <h1 className="text-brand-yellow">
+            UNCHAIN
+            <br />
+            <div className="text-white">your</div>
+            <div className="text-white">potential.</div>
+          </h1>
         </div>
 
         <p

@@ -11,7 +11,7 @@ export const News: FC = (
   return (
     <Layout pageTitle="Latest News">
       <div id="container" className="mt-32 px-16 space-y-16">
-        <h1 className="">NEWS</h1>
+        <h2 className="">NEWS</h2>
         <div
           id="newsgrid"
           className="laptop:grid laptop:grid-cols-3 laptop:gap-12 bigmonitor:gap-x-24"

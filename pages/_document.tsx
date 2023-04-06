@@ -66,3 +66,5 @@ CustomDocument.getInitialProps = async (
 
   return { ...initialProps, nonce: nonce };
 };
+
+export default CustomDocument;

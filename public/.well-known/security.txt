@@ -1,0 +1,2 @@
+Contact: mailto:cohurin+bugbounty@shiftbase.xyz
+OpenBugBounty: https://openbugbounty.org/bugbounty/zsh0x/

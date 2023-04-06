@@ -64,6 +64,7 @@ export default News;
 
 export const getStaticProps: GetStaticProps = async () => {
   const newsURLs = [
+    'https://prtimes.jp/main/html/rd/p/000000008.000095801.html',
     'https://www.neweconomy.jp/posts/291925',
     'https://prtimes.jp/main/html/rd/p/000000006.000095801.html',
     'https://www.neweconomy.jp/features/neco/256949',

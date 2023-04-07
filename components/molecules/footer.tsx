@@ -12,7 +12,7 @@ export const Footer: FC = () => {
   const urls = [
     'https://unchain-shiftbase.notion.site/UNCHAIN-20230126-aed99b6ac88642abae05b98d821edda8',
     'https://unchain-shiftbase.notion.site/UNCHAIN-20230126-fa9d10f2a932424eb33a46f927f92d9f',
-    'https://unchain-shiftbase.notion.site/shiftbase-e6b6d20aea7d4d38986a4b30fb5f3719',
+    'https://shiftbase.xyz/careers',
     'https://shiftbase.xyz/',
   ];
   const texts = [

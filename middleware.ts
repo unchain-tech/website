@@ -25,12 +25,6 @@ const generateCspHeader = (nonce: string): string => {
 };
 
 export const middleware = (req: NextRequest): NextResponse | void => {
-  const wellKnown = ['/security.txt'];
-  if (wellKnown.includes(req.nextUrl.pathname)) {
-    return NextResponse.redirect(
-      new URL(`/.well-known${req.nextUrl.pathname}`, req.url),
-    );
-  }
   const newNonce = generateNonce();
   const newCsp = generateCspHeader(newNonce);
 

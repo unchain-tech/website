@@ -1,2 +1,6 @@
-Contact: mailto:cohurin+bugbounty@shiftbase.xyz
-OpenBugBounty: https://openbugbounty.org/bugbounty/zsh0x/
+Contact: https://openbugbounty.org/bugbounty/zsh0x
+Expires: 2024-04-07T23:37:07.000Z
+Preferred-Languages: en, ja
+Canonical: https://unchain.tech/.well-known/security.txt
+Hiring: https://shiftbase.xyz/careers
+OpenBugBounty: https://openbugbounty.org/bugbounty/zsh0x

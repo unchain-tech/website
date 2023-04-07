@@ -7,7 +7,6 @@ import { useState } from 'react';
 import type { FC } from 'react';
 
 import { useLocale } from 'hooks/useLocale';
-import { useWindowDimensions } from 'hooks/useWindowDimensions';
 
 const Item: FC<{
   id: string;
@@ -38,14 +37,15 @@ export const NavMenu: FC = () => {
   const { t } = useLocale();
   const page = useRouter();
 
-  const { width } = useWindowDimensions();
   const [isMenuOpen, setMenuOpen] = useState(false);
 
-  const MenuItems = () => {
+  const MenuItems = (props: { open: boolean }) => {
     return (
       <div
         id="nav menu"
-        className="absolute inset-y-16 right-4 flex flex-col items-end space-y-1 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-y-0 laptop:space-x-6"
+        className={`${
+          props.open ? '' : 'hidden '
+        }absolute inset-y-16 right-4 flex flex-col items-end space-y-2 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-y-0 laptop:space-x-6`}
       >
         {/* Portal */}
         <Item id="start" href="https://app.unchain.tech/" text="Start" />
@@ -74,16 +74,13 @@ export const NavMenu: FC = () => {
 
   return (
     <div className="mx-2 items-center desktop:mx-12">
-      {width! > 769 ? (
-        <MenuItems />
-      ) : isMenuOpen ? (
-        <>
-          <Hamburger rounded={true} toggled={isMenuOpen} toggle={setMenuOpen} />
-          <MenuItems />
-        </>
-      ) : (
+      <div id="laptopmenu" className="hidden laptop:block">
+        <MenuItems open />
+      </div>
+      <div id="mobilemenu" className="block laptop:hidden">
         <Hamburger rounded={true} toggled={isMenuOpen} toggle={setMenuOpen} />
-      )}
+        <MenuItems open={isMenuOpen} />
+      </div>
     </div>
   );
 };

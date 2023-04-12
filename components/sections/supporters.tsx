@@ -44,6 +44,11 @@ export const Supporters: FC = () => {
             partner_website="https://astar.network/"
           />
           <PartnerLogo
+            partner_name="AWS Activate"
+            logo_image="/partners/awsactivate.png"
+            partner_website="https://aws.amazon.com/activate/"
+          />
+          <PartnerLogo
             partner_name="Fracton Ventures"
             logo_image="/partners/fracton.png"
             partner_website="https://fracton.ventures/"

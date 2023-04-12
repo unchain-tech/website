@@ -42,14 +42,14 @@ export const Events = () => {
 
   const ids = ['event_shinchoku', 'event_astar', 'event_bugbounty'];
   const officiallinks = [
+    'https://prtimes.jp/main/html/rd/p/000000008.000095801.html',
     'https://unchain-shiftbase.notion.site/web3-34bb72d36ded49229bf2cc07aab34da5',
     'https://unchain-shiftbase.notion.site/UNCHAIN-Build2Earn-on-Astar-Network-5b25608cccd549dea4609ee9cb87b52a',
-    'https://unchain-shiftbase.notion.site/UNCHAIN-Bug-Bounty-9ab7e3b89ae54791a048924bf9efac84',
   ];
   const officiallink_blurbs = [
-    "UNCHAIN developer's grant - 進捗に応じて、最大 2,000,000 $JPYC の開発資金を獲得しよう！",
-    '#Build2Earn on Astar Network - dAppを開発して 1000 $ASTR を獲得しよう！',
-    'Bug Bounty Program - スマートコントラクトのセキュリティ技術を学び、バグを見つけて賞金獲得しよう！',
+    'UNCHAIN x AWS Activate - 進捗2Earnに参加して、AWS Activate creditsを獲得しよう!',
+    '(📈, 💰) 進捗2Earn - 進捗に応じて、最大 2,000,000 $JPYC の開発資金を獲得しよう！',
+    '#Build2Earn on Astar Network - dAppを開発して $ASTR を獲得しよう！',
   ];
 
   return (

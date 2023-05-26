@@ -3,17 +3,15 @@ import Link from 'next/link';
 
 import { FC } from 'react';
 
-import { useWindowDimensions } from 'hooks/useWindowDimensions';
-
 const Chain: FC<{ chain: string; url: string }> = ({ chain, url }) => {
-  const { width } = useWindowDimensions();
   return (
     <Link href={url} target="_blank" passHref={true}>
       <Image
         src={`/chain/${chain}.png`}
         alt={`${chain} logo`}
-        width={width! > 481 ? 240 : 120}
-        height={60}
+        width={240}
+        height={120}
+        sizes="100vh"
       />
     </Link>
   );

@@ -20,7 +20,7 @@ export const News: FC = (
   const separators = ['。', '｜'];
   return (
     <Layout pageTitle="Latest News">
-      <div id="container" className="mt-32 px-16 space-y-16">
+      <div id="container" className="mt-32 space-y-16 px-16">
         <h2 className="">NEWS</h2>
         <div
           id="newsgrid"
@@ -31,7 +31,7 @@ export const News: FC = (
               <a
                 key={`newsitem_${i + 1}`}
                 href={d.url}
-                className="mb-8 pb-8 flex flex-col cursor-pointer items-center rounded-sm hover:outline outline-info hover:no-underline"
+                className="mb-8 flex cursor-pointer flex-col items-center rounded-sm pb-8 outline-info hover:no-underline hover:outline"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -42,14 +42,14 @@ export const News: FC = (
                   alt="article thumbnail"
                 />
                 <div className="flex flex-col space-y-4 p-2">
-                  <p className="text-lg font-medium laptop:text-2xl font-sans">
+                  <p className="font-sans text-lg font-medium laptop:text-2xl">
                     {
                       d.title.split(
                         new RegExp('[' + separators.join('') + ']', 'g'),
                       )[0]
                     }
                   </p>
-                  <p className="text-base font-sans">
+                  <p className="font-sans text-base">
                     {d.description.slice(0, 75)}...
                   </p>
                 </div>

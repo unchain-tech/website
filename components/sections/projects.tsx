@@ -41,7 +41,7 @@ export const Projects: FC = () => {
           <h3 className="text-brand-red desktop:text-6xl">your own project.</h3>
         </div>
 
-        <div id="items" className="pt-4 desktop:pt-8 space-y-2 w-3/4">
+        <div id="items" className="w-3/4 space-y-2 pt-4 desktop:pt-8">
           <p className="text-xs leading-relaxed desktop:text-lg">
             ✅ public chain上でdApp開発を実践できる22の学習コンテンツを提供
           </p>
@@ -54,7 +54,7 @@ export const Projects: FC = () => {
         <BannerImage />
         <div
           id="red bloc"
-          className="bg-brand-red -mt-24 h-28 tablet:h-40 tablet:-mt-36 laptop:-mt-60 laptop:h-64 desktop:-mt-56 desktop:h-60 monitor:-mt-96 monitor:h-96"
+          className="-mt-24 h-28 bg-brand-red tablet:-mt-36 tablet:h-40 laptop:-mt-60 laptop:h-64 desktop:-mt-56 desktop:h-60 monitor:-mt-96 monitor:h-96"
         />
       </div>
     </div>

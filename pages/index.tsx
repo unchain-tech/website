@@ -16,7 +16,7 @@ export const Home: FC = () => {
       <Image
         src={thumbnailNFT}
         alt="A thumbnail image of UNCHAIN NFTs"
-        className="absolute -z-10 right-0 invisible tablet:visible"
+        className="invisible absolute right-0 -z-10 tablet:visible"
         width={640}
         height={640}
       />

@@ -26,7 +26,7 @@ export const Footer: FC = () => {
     <footer className="py-4">
       <div
         id="shiftbase"
-        className="bg-brand-white text-brand-onyx px-4 py-12 space-y-4"
+        className="space-y-4 bg-brand-white px-4 py-12 text-brand-onyx"
       >
         <div id="company" className="space-y-2">
           <Image
@@ -60,7 +60,7 @@ export const Footer: FC = () => {
         </div>
       </div>
 
-      <div className="mx-auto mt-6 text-center text-sm desktop:text-base font-sans">
+      <div className="mx-auto mt-6 text-center font-sans text-sm desktop:text-base">
         {currentYear} &copy; {companyName}. All rights reserved.
       </div>
     </footer>

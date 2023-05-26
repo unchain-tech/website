@@ -14,7 +14,7 @@ export const Services: FC = () => {
     return (
       <div
         id="card"
-        className="bg-brand-onyx text-brand-white border-4 border-brand-pink rounded-[36px] p-8"
+        className="rounded-[36px] border-4 border-brand-pink bg-brand-onyx p-8 text-brand-white"
       >
         <Image
           src={`/flowerbutton${iconType}.png`}
@@ -30,7 +30,7 @@ export const Services: FC = () => {
   };
   return (
     <div id="what we offer" className="bg-brand-yellow text-brand-onyx">
-      <div id="container" className="px-6 desktop:px-32 py-8 desktop:py-16">
+      <div id="container" className="px-6 py-8 desktop:px-32 desktop:py-16">
         <div
           id="sectiontitle"
           className="flex flex-col desktop:flex-row desktop:space-x-6"
@@ -42,7 +42,7 @@ export const Services: FC = () => {
 
         <div
           id="sectionbody"
-          className="py-16 grid grid-flow-row gap-4 desktop:grid-flow-col desktop:gap-16"
+          className="grid grid-flow-row gap-4 py-16 desktop:grid-flow-col desktop:gap-16"
         >
           <Card
             iconType="1"
@@ -68,7 +68,7 @@ export const Services: FC = () => {
             passHref={true}
             target="_blank"
           >
-            <button className="btn px-12 text-brand-white bg-neutral-700 hover:bg-brand-blue desktop:px-12 desktop:py-4">
+            <button className="btn bg-neutral-700 px-12 text-brand-white hover:bg-brand-blue desktop:px-12 desktop:py-4">
               Learn more about UNCHAIN
             </button>
           </Link>

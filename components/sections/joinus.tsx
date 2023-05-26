@@ -16,7 +16,7 @@ export const Joinus = () => {
   }) => {
     return (
       <h2
-        className={`font-light text-[84px] laptop:text-[112px] desktop:text-[144px] leading-none z-10 ${className}`}
+        className={`z-10 text-[84px] font-light leading-none laptop:text-[112px] desktop:text-[144px] ${className}`}
       >
         {text}
       </h2>
@@ -25,13 +25,13 @@ export const Joinus = () => {
 
   return (
     <div id="Join us" className="relative bg-brand-onyx text-brand-white">
-      <div id="container" className="px-6 space-y-8 pb-16">
+      <div id="container" className="space-y-8 px-6 pb-16">
         <Events />
         <div
           id="slogan and logo"
-          className="pt-16 flex flex-row justify-between"
+          className="flex flex-row justify-between pt-16"
         >
-          <div id="slogan" className="py-4 flex flex-col">
+          <div id="slogan" className="flex flex-col py-4">
             <Slogan text="Join" />
             <Slogan className="ml-32 desktop:ml-64" text="the" />
             <div className="flex flex-col laptop:flex-row">
@@ -50,7 +50,7 @@ export const Joinus = () => {
 
         <div className="flex justify-center hover:no-underline">
           <Link id="join_community" href="https://app.unchain.tech/" passHref>
-            <button className="btn bg-brand-red hover:bg-brand-blue px-16 py-4 text-2xl flex items-center space-x-2">
+            <button className="btn flex items-center space-x-2 bg-brand-red px-16 py-4 text-2xl hover:bg-brand-blue">
               <p>Join UNCHAIN</p>
             </button>
           </Link>

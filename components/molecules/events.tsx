@@ -13,18 +13,18 @@ export const Events = () => {
         id={id}
         href={url}
         passHref={true}
-        className="hover:no-underline hover:text-brand-sky"
+        className="hover:text-brand-sky hover:no-underline"
         target="_blank"
       >
-        <div className="hover:outline outline-1 outline-brand-sky rounded-lg p-1">
-          <div className="flex py-2 justify-between">
-            <p className="font-sans truncate pr-6">{description}</p>
+        <div className="rounded-lg p-1 outline-1 outline-brand-sky hover:outline">
+          <div className="flex justify-between py-2">
+            <p className="truncate pr-6 font-sans">{description}</p>
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
-                className="w-6 h-6 laptop:w-8 laptop:h-8 stroke-brand-yellow"
+                className="h-6 w-6 stroke-brand-yellow laptop:h-8 laptop:w-8"
               >
                 <path
                   strokeLinecap="round"
@@ -54,7 +54,7 @@ export const Events = () => {
 
   return (
     <div id="official links container" className="py-8">
-      <h2 className="text-brand-yellow py-4">EVENTS</h2>
+      <h2 className="py-4 text-brand-yellow">EVENTS</h2>
       {officiallink_blurbs.map((blurb, index) => (
         <EventItem
           key={`Event ${index + 1}`}

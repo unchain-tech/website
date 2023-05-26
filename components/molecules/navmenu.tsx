@@ -23,10 +23,10 @@ const Item: FC<{
       className="hover:no-underline"
     >
       <div
-        className="py-2 px-3 rounded-md laptop:rounded-xl
-                  outline outline-1 laptop:outline-0 laptop:hover:outline-1 outline-brand-yellow
-                  font-sans font-semibold tracking-widest text-brand-white
-                bg-brand-onyx laptop:bg-transparent hover:bg-brand-onyx"
+        className="rounded-md bg-brand-onyx px-3 py-2
+                  font-sans font-semibold tracking-widest text-brand-white outline
+                  outline-1 outline-brand-yellow hover:bg-brand-onyx laptop:rounded-xl
+                laptop:bg-transparent laptop:outline-0 laptop:hover:outline-1"
       >
         {text}
       </div>
@@ -45,7 +45,7 @@ export const NavMenu: FC = () => {
         id="nav menu"
         className={`${
           props.open ? '' : 'hidden '
-        }absolute inset-y-16 right-4 flex flex-col items-end space-y-2 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-y-0 laptop:space-x-6`}
+        }absolute inset-y-16 right-4 flex flex-col items-end space-y-2 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-x-6 laptop:space-y-0`}
       >
         {/* Portal */}
         <Item id="start" href="https://app.unchain.tech/" text="Start" />

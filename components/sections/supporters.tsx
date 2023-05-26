@@ -19,7 +19,7 @@ export const Supporters: FC = () => {
       <Link href={partner_website} target="_blank">
         <Image
           src={logo_image}
-          className="hover:cursor-pointer mx-auto"
+          className="mx-auto hover:cursor-pointer"
           width={width! > 481 ? 320 : 140}
           height={60}
           alt={`${partner_name} logo`}
@@ -31,12 +31,12 @@ export const Supporters: FC = () => {
   return (
     <div id="collaborators">
       <div id="container" className="px-6 py-8 desktop:py-16">
-        <h2 className="text-brand-yellow text-center py-8 text-4xl desktop:text-6xl">
+        <h2 className="py-8 text-center text-4xl text-brand-yellow desktop:text-6xl">
           official supporters
         </h2>
         <div
           id="partners"
-          className="py-8 items-center grid gap-4 grid-cols-2 tablet:grid-cols-3"
+          className="grid grid-cols-2 items-center gap-4 py-8 tablet:grid-cols-3"
         >
           <PartnerLogo
             partner_name="ASTAR Network"

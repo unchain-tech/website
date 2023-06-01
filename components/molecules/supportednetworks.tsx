@@ -25,7 +25,7 @@ export const SupportedNetworks = () => {
     'icp',
     'near',
     'polygon',
-    'ripple',
+    'xrpl',
     'solana',
   ];
   const links = [
@@ -35,7 +35,7 @@ export const SupportedNetworks = () => {
     'https://internetcomputer.org/',
     'https://near.org/',
     'https://polygon.technology/',
-    'https://ripple.com/',
+    'https://xrpl.org/',
     'https://solana.com/',
   ];
   return (

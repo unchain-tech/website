@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { FC } from 'react';
 
-import { useWindowDimensions } from 'hooks/useWindowDimensions';
+import { useWindowDimensions } from '@/hooks/useWindowDimensions';
 
 export const Supporters: FC = () => {
   const { width } = useWindowDimensions();

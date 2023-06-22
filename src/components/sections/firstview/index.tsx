@@ -1,8 +1,7 @@
 import Link from 'next/link';
-
 import { FC } from 'react';
 
-import SupportedNetworks from 'components/molecules/supportednetworks';
+import SupportedNetworks from './supportednetworks';
 
 export const FirstView: FC = () => {
   return (

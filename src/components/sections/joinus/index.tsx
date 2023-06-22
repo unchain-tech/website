@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
+import UNCHAIN_icon from 'public/UNCHAIN_icon.png';
 import { FC } from 'react';
 
-import Events from 'components/molecules/events';
-import { useWindowDimensions } from 'hooks/useWindowDimensions';
-import UNCHAIN_icon from 'public/UNCHAIN_icon.png';
+import Events from './events';
+
+import { useWindowDimensions } from '@/hooks/useWindowDimensions';
 
 export const Joinus = () => {
   const { width } = useWindowDimensions();

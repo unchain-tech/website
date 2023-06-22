@@ -1,10 +1,9 @@
 import Image from 'next/image';
-
-import { FC } from 'react';
-
-import { useWindowDimensions } from 'hooks/useWindowDimensions';
 import lessoncards_wide from 'public/projects_wide.png';
 import lessoncards_widest from 'public/projects_widest.png';
+import { FC } from 'react';
+
+import { useWindowDimensions } from '@/hooks/useWindowDimensions';
 
 export const Projects: FC = () => {
   const { width } = useWindowDimensions();

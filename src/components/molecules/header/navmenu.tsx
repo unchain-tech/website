@@ -1,12 +1,10 @@
 import { Spin as Hamburger } from 'hamburger-react';
-
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
 import { useState } from 'react';
 import type { FC } from 'react';
 
-import { useLocale } from 'hooks/useLocale';
+import { useLocale } from '@/hooks/useLocale';
 
 const Item: FC<{
   id: string;

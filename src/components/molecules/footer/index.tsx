@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
-
 import { FC } from 'react';
 
-import shiftbase_logo from 'public/sb_logoname.png';
+import { Company } from './Company';
+import { Socials } from './Socials';
 
 export const Footer: FC = () => {
   const companyName = '株式会社shiftbase';
@@ -26,21 +25,11 @@ export const Footer: FC = () => {
     <footer className="py-4">
       <div
         id="shiftbase"
-        className="space-y-4 bg-brand-white px-4 py-12 text-brand-onyx"
+        className="space-y-4 bg-brand-white px-4 py-4 text-brand-onyx"
       >
-        <div id="company" className="space-y-2">
-          <Image
-            src={shiftbase_logo}
-            alt="shiftbase logo"
-            width={240}
-            height={80}
-          />
-          <h2 id="company" className="font-sans font-medium">
-            株式会社shiftbase
-          </h2>
-          <p id="address" className="font-sans text-lg">
-            〒160-0011 新宿区若葉1-7-15
-          </p>
+        <div className="flex justify-between">
+          <Company />
+          <Socials />
         </div>
         <div id="links" className="flex flex-col space-y-2">
           {texts.map((t, i) => {

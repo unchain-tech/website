@@ -1,7 +1,7 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
-import { generateNonce } from './utils/randomNonce';
+import { generateNonce } from '@/utils/randomNonce';
 
 export const config = {
   matcher: ['/((?!api|_next|favicon.ico).*)', '/'],
@@ -43,7 +43,7 @@ export const middleware = (req: NextRequest): NextResponse | void => {
   res.headers.set('Referrer-Policy', 'same-origin');
   res.headers.set(
     'Strict-Transport-Security',
-    'max-age=63072000; includeSubDomains; preload',
+    'max-age=63072000; includeSubDomains; preload'
   );
 
   res.headers.set('X-Content-Type-Options', 'nosniff');

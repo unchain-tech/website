@@ -1,7 +1,7 @@
 module.exports = {
   arrowParens: 'always',
   tabWidth: 2,
-  trailingComma: 'all',
+  trailingComma: 'es5',
   singleQuote: true,
   semi: true,
   importOrder: ['^[./]', '^@/(.*)$'],
@@ -10,19 +10,5 @@ module.exports = {
   importOrderGroupNamespaceSpecifiers: true,
   importOrderCaseInsensitive: true,
   tailwindConfig: './tailwind.config.js',
-  overrides: [
-    {
-      files: ['{pages,components,hooks,}/**/*.{tsx,jsx,js,ts}'],
-      options: {
-        importOrder: [
-          //なぜこの順番が要求されるのかはわからない
-          'hamburger-react',
-          'next',
-          'react',
-          '<THIRD_PARTY_MODULES>',
-        ],
-      },
-    },
-  ],
-  plugins: [require('prettier-plugin-tailwindcss')],
+  plugins: ['prettier-plugin-tailwindcss'],
 };

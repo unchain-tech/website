@@ -6,11 +6,10 @@ CI Status: [![CI status (main)](https://github.com/shiftbase-inc/UNCHAIN-LP/acti
 
 ## Features
 
-- typescript
-- tailwindcss
-- ESlint
-- prettier
-- vscode settings
+- [Typescript](https://github.com/DefinitelyTyped/DefinitelyTyped)
+- [Tailwindcss](https://tailwindcss.com/)
+- [ESlint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
 ## Instantiate
 

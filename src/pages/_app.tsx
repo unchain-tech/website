@@ -1,7 +1,8 @@
 import { AppProps } from 'next/app';
 
 import '/public/styles/globals.css';
-import GoogleTagManager, { googleTagManagerId } from 'components/utils/gtm';
+
+import GoogleTagManager, { googleTagManagerId } from '@/utils/gtm';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

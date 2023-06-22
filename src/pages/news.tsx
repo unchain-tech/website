@@ -1,9 +1,8 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Image from 'next/image';
-
 import { FC } from 'react';
 
-import Layout from 'components/layouts/baseLayout';
+import Layout from '@/components/layouts/baseLayout';
 
 type NewsMetadata = {
   title: string;
@@ -15,7 +14,7 @@ type NewsMetadata = {
 };
 
 export const News: FC = (
-  props: InferGetStaticPropsType<typeof getStaticProps>,
+  props: InferGetStaticPropsType<typeof getStaticProps>
 ) => {
   const separators = ['。', '｜'];
   return (
@@ -45,7 +44,7 @@ export const News: FC = (
                   <p className="font-sans text-lg font-medium laptop:text-2xl">
                     {
                       d.title.split(
-                        new RegExp('[' + separators.join('') + ']', 'g'),
+                        new RegExp('[' + separators.join('') + ']', 'g')
                       )[0]
                     }
                   </p>
@@ -76,11 +75,11 @@ export const getStaticProps: GetStaticProps = async () => {
   const metadataList = await Promise.all(
     newsURLs.map(async (x) => {
       const json: NewsMetadata = await fetch(
-        `https://jsonlink.io/api/extract?url=${encodeURI(x)}`,
+        `https://jsonlink.io/api/extract?url=${encodeURI(x)}`
       ).then((res) => res.json());
 
       return json;
-    }),
+    })
   );
 
   return {

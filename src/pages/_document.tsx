@@ -6,10 +6,9 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
-
 import React from 'react';
 
-import { googleTagManagerId } from 'components/utils/gtm';
+import { googleTagManagerId } from '@/utils/gtm';
 
 type NoncedDocument = DocumentInitialProps & { nonce: string };
 
@@ -59,7 +58,7 @@ const CustomDocument = (props: NoncedDocument) => {
 };
 
 CustomDocument.getInitialProps = async (
-  ctx: DocumentContext,
+  ctx: DocumentContext
 ): Promise<NoncedDocument> => {
   const initialProps = await Document.getInitialProps(ctx);
   const nonce = (ctx.req?.headers['x-csp-nonce'] as string) ?? '';

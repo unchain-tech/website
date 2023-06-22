@@ -1,14 +1,13 @@
 import Image from 'next/image';
-
+import thumbnailNFT from 'public/thumbnail_nft.png';
 import { FC } from 'react';
 
-import Layout from 'components/layouts/baseLayout';
-import FirstView from 'components/sections/firstview';
-import Joinus from 'components/sections/joinus';
-import Projects from 'components/sections/projects';
-import Services from 'components/sections/services';
-import Supporters from 'components/sections/supporters';
-import thumbnailNFT from 'public/thumbnail_nft.png';
+import Layout from '@/components/layouts/baseLayout';
+import FirstView from '@/components/sections/firstview';
+import Joinus from '@/components/sections/joinus';
+import Projects from '@/components/sections/projects';
+import Services from '@/components/sections/services';
+import Supporters from '@/components/sections/supporters';
 
 export const Home: FC = () => {
   return (

@@ -8,7 +8,7 @@ const base_unchainApplication = new Airtable({
 }).base(process.env.AIRTABLE_BASE_UNCHAINAPPLICATION as string);
 
 const table_unchainApplication = base_unchainApplication(
-  process.env.AIRTABLE_TABLE_UNCHAINAPPLICATION as string,
+  process.env.AIRTABLE_TABLE_UNCHAINAPPLICATION as string
 );
 
 export { table_unchainApplication };

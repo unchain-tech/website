@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import Link from 'next/link';
+import shiftbase_logo from 'public/sb_logoname.png';
 import { FC } from 'react';
 
 import { Company } from './Company';
@@ -27,10 +29,17 @@ export const Footer: FC = () => {
         id="shiftbase"
         className="space-y-4 bg-brand-white px-4 py-4 text-brand-onyx"
       >
-        <div className="flex justify-between">
-          <Company />
+        <div className="flex flex-row justify-between">
+          <Image
+            src={shiftbase_logo}
+            alt="shiftbase logo"
+            className="w-2/5 tablet:w-2/5 laptop:w-1/4 monitor:w-1/6"
+          />
           <Socials />
         </div>
+
+        <Company />
+
         <div id="links" className="flex flex-col space-y-2">
           {texts.map((t, i) => {
             return (
@@ -38,7 +47,7 @@ export const Footer: FC = () => {
                 <Link
                   href={urls[i]}
                   passHref={true}
-                  className="cursor-pointer font-sans hover:text-brand-blue"
+                  className="cursor-pointer font-sans hover:text-brand-blue text-base font-normal"
                   target="_blank"
                 >
                   {t}

@@ -41,21 +41,16 @@ export const SupportedNetworks = () => {
     <div id="supported networks" className="bg-brand-white">
       <div id="container" className="relative overflow-x-hidden">
         <div
-          className="flex animate-marquee flex-row
-                    items-center space-x-2 px-1
-                    py-2 laptop:space-x-8
-                    laptop:p-4"
+          className="relative flex animate-marquee
+                    items-center p-2 space-x-8 laptop:p-4 min-w-[1201px]"
         >
           {chains.map((chain, index) => (
             <Chain key={`${chain} logo`} chain={chain} url={links[index]} />
           ))}
         </div>
         <div
-          className="absolute top-0
-                    flex animate-marquee2 flex-row
-                    items-center space-x-2 px-1
-                    py-2 laptop:space-x-8
-                    laptop:p-4"
+          className="absolute top-0 flex animate-marquee2
+                    items-center p-2 space-x-8 laptop:p-4 min-w-[1201px]"
         >
           {chains.map((chain, index) => (
             <Chain key={`${chain} logo`} chain={chain} url={links[index]} />

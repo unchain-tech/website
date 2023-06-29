@@ -8,8 +8,10 @@ const Chain: FC<{ chain: string; url: string }> = ({ chain, url }) => {
       <Image
         src={`/chain/${chain}.png`}
         alt={`${chain} logo`}
-        width={240}
-        height={120}
+        width="0"
+        height="0"
+        sizes="100vh"
+        className="h-full w-auto"
       />
     </Link>
   );

@@ -32,8 +32,8 @@ const Item: FC<{
   );
 };
 export const NavMenu: FC = () => {
-  const { t } = useLocale();
-  const page = useRouter();
+  // const { t } = useLocale();
+  // const page = useRouter();
 
   const [isMenuOpen, setMenuOpen] = useState(false);
 

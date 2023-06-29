@@ -10,13 +10,12 @@ const Chain: FC<{ chain: string; url: string }> = ({ chain, url }) => {
         alt={`${chain} logo`}
         width={240}
         height={120}
-        sizes="100vh"
       />
     </Link>
   );
 };
 
-export const SupportedNetworks = () => {
+export const SupportedNetworks: FC = () => {
   const chains = [
     'astar',
     'avalanche',
@@ -24,8 +23,8 @@ export const SupportedNetworks = () => {
     'icp',
     'near',
     'polygon',
-    'xrpl',
     'solana',
+    'xrpl',
   ];
   const links = [
     'https://astar.network/',
@@ -34,23 +33,23 @@ export const SupportedNetworks = () => {
     'https://internetcomputer.org/',
     'https://near.org/',
     'https://polygon.technology/',
-    'https://xrpl.org/',
     'https://solana.com/',
+    'https://xrpl.org/',
   ];
   return (
     <div id="supported networks" className="bg-brand-white">
       <div id="container" className="relative overflow-x-hidden">
         <div
-          className="relative flex animate-marquee
-                    items-center p-2 space-x-8 laptop:p-4 min-w-[1201px]"
+          className="relative flex animate-marquee items-center min-w-[1201px]
+          p-2 space-x-4 laptop:p-4 laptop:space-x-8"
         >
           {chains.map((chain, index) => (
             <Chain key={`${chain} logo`} chain={chain} url={links[index]} />
           ))}
         </div>
         <div
-          className="absolute top-0 flex animate-marquee2
-                    items-center p-2 space-x-8 laptop:p-4 min-w-[1201px]"
+          className="absolute top-0 flex animate-marquee2 items-center min-w-[1201px]
+          p-2 space-x-4 laptop:p-4 laptop:space-x-8"
         >
           {chains.map((chain, index) => (
             <Chain key={`${chain} logo`} chain={chain} url={links[index]} />

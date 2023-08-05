@@ -48,6 +48,11 @@ export const Supporters: FC = () => {
             partner_website="https://aws.amazon.com/activate/"
           />
           <PartnerLogo
+            partner_name="ChainIDE"
+            logo_image="/partners/chainide.png"
+            partner_website="https://chainide.com/"
+          />
+          <PartnerLogo
             partner_name="Fracton Ventures"
             logo_image="/partners/fracton.png"
             partner_website="https://fracton.ventures/"

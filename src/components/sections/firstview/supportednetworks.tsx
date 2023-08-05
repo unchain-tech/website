@@ -11,7 +11,7 @@ const Chain: FC<{ chain: string; url: string }> = ({ chain, url }) => {
         width="0"
         height="0"
         sizes="100vh"
-        className="h-full w-auto"
+        className="h-full w-40"
       />
     </Link>
   );

@@ -31,11 +31,11 @@ export const Supporters: FC = () => {
     <div id="collaborators">
       <div id="container" className="px-6 py-8 desktop:py-16">
         <h2 className="py-8 text-center text-4xl text-brand-yellow desktop:text-6xl">
-          official supporters
+          Program Partners
         </h2>
         <div
-          id="partners"
-          className="grid grid-cols-2 items-center gap-4 py-8 tablet:grid-cols-3"
+          id="supporters"
+          className="grid grid-cols-1 items-center gap-4 py-8 tablet:grid-cols-3"
         >
           <PartnerLogo
             partner_name="ASTAR Network"
@@ -47,6 +47,19 @@ export const Supporters: FC = () => {
             logo_image="/partners/awsactivate.png"
             partner_website="https://aws.amazon.com/activate/"
           />
+          <PartnerLogo
+            partner_name="JPYC"
+            logo_image="/partners/jpyc.png"
+            partner_website="https://jpyc.jp/"
+          />
+        </div>
+        <h2 className="py-8 text-center text-2xl text-brand-yellow desktop:text-4xl">
+          Supporters
+        </h2>
+        <div
+          id="supporters"
+          className="grid grid-cols-3 items-center gap-4 py-8 tablet:grid-cols-6"
+        >
           <PartnerLogo
             partner_name="ChainIDE"
             logo_image="/partners/chainide.png"

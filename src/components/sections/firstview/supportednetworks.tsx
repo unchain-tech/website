@@ -40,10 +40,10 @@ export const SupportedNetworks: FC = () => {
   ];
   return (
     <div id="supported networks" className="bg-brand-white">
-      <div id="container" className="relative overflow-x-hidden">
+      <div id="container" className="relative flex overflow-x-hidden">
         <div
           className="relative flex animate-marquee items-center min-w-[1201px]
-          p-2 space-x-4 laptop:p-4 laptop:space-x-8"
+          whitespace-nowrap p-2 space-x-4 laptop:p-4 laptop:space-x-8"
         >
           {chains.map((chain, index) => (
             <Chain key={`${chain} logo`} chain={chain} url={links[index]} />
@@ -51,7 +51,7 @@ export const SupportedNetworks: FC = () => {
         </div>
         <div
           className="absolute top-0 flex animate-marquee2 items-center min-w-[1201px]
-          p-2 space-x-4 laptop:p-4 laptop:space-x-8"
+          whitespace-nowrap p-2 space-x-4 laptop:p-4 laptop:space-x-8"
         >
           {chains.map((chain, index) => (
             <Chain key={`${chain} logo`} chain={chain} url={links[index]} />

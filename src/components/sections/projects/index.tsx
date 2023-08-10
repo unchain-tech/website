@@ -42,10 +42,10 @@ export const Projects: FC = () => {
 
         <div id="items" className="w-3/4 space-y-2 pt-4 desktop:pt-8">
           <p className="text-xs leading-relaxed desktop:text-lg">
-            ✅ public chain上でdApp開発を実践できる22の学習コンテンツを提供
+            ✅ public chain上でdApp開発を実践できる25の学習コンテンツを提供
           </p>
           <p className="text-xs leading-relaxed desktop:text-lg">
-            ✅ web3プロダクトの開発歴を証明するNFTを現時点で500枚以上発行
+            ✅ web3プロダクトの開発歴をNFTで証明
           </p>
         </div>
       </div>

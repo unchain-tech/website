@@ -2,15 +2,19 @@ import { AppProps } from 'next/app';
 
 import '/public/styles/globals.css';
 
-import GoogleTagManager, { googleTagManagerId } from '@/utils/gtm';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const UNCHAIN_LP = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <GoogleTagManager googleTagManagerId={googleTagManagerId} />
+      {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ? (
+        <GoogleAnalytics
+          GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}
+        />
+      ) : null}
       <Component {...pageProps} />
     </>
   );
-}
+};
 
-export default MyApp;
+export default UNCHAIN_LP;

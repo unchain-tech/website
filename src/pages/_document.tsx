@@ -8,8 +8,6 @@ import Document, {
 } from 'next/document';
 import React from 'react';
 
-import { googleTagManagerId } from '@/utils/gtm';
-
 type NoncedDocument = DocumentInitialProps & { nonce: string };
 
 const CustomDocument = (props: NoncedDocument) => {
@@ -38,18 +36,6 @@ const CustomDocument = (props: NoncedDocument) => {
       </Head>
 
       <body nonce={props.nonce}>
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `
-              <iframe
-                src="https://www.googletagmanager.com/ns.html?id=${googleTagManagerId}"
-                height="0"
-                width="0"
-                style="display:none;visibility:hidden"
-              />`,
-          }}
-          nonce={props.nonce}
-        />
         <Main />
         <NextScript nonce={props.nonce} />
       </body>

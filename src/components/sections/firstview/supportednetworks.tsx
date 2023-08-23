@@ -57,6 +57,14 @@ export const SupportedNetworks: FC = () => {
             <Chain key={`${chain} logo`} chain={chain} url={links[index]} />
           ))}
         </div>
+        <div
+          className="absolute top-0 flex animate-marquee3 items-center min-w-[1201px]
+          whitespace-nowrap p-2 space-x-4 laptop:p-4 laptop:space-x-8"
+        >
+          {chains.map((chain, index) => (
+            <Chain key={`${chain} logo`} chain={chain} url={links[index]} />
+          ))}
+        </div>
       </div>
     </div>
   );

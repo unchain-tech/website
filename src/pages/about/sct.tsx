@@ -10,7 +10,7 @@ export const sct: FC = () => {
         className="my-32 space-y-12 px-6 desktop:px-12 max-w-screen-desktop"
       >
         <h2 className="text-center desktop:text-left">
-          特定商取引法に基づく表示
+          特定商取引法に基づく表記
         </h2>
         <div className="space-y-4">
           <h3>販売業者の名称</h3>

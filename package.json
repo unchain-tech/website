@@ -51,6 +51,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build-static": "next build && next export",
     "start": "next start",
     "lint": "next lint --fix",
     "prettier:check": "prettier --ignore-unknown --no-error-on-unmatched-pattern --ignore-path .gitignore --check .",

@@ -35,7 +35,7 @@ export const Supporters: FC = () => {
         </h2>
         <div
           id="supporters"
-          className="grid grid-cols-1 items-center gap-4 py-8 tablet:grid-cols-3"
+          className="grid grid-cols-1 items-center gap-4 py-8 laptop:grid-cols-3"
         >
           <PartnerLogo
             partner_name="ASTAR Network"
@@ -58,7 +58,7 @@ export const Supporters: FC = () => {
         </h2>
         <div
           id="supporters"
-          className="grid grid-cols-3 items-center gap-4 py-8 tablet:grid-cols-6"
+          className="grid grid-cols-3 items-center gap-4 py-8 laptop:grid-cols-5"
         >
           <PartnerLogo
             partner_name="ChainIDE"
@@ -84,11 +84,6 @@ export const Supporters: FC = () => {
             partner_name="Polygon Technologies"
             logo_image="/partners/polygon.png"
             partner_website="https://polygon.technology/"
-          />
-          <PartnerLogo
-            partner_name="Polygon Studio"
-            logo_image="/partners/polygonstudio.png"
-            partner_website="https://polygonstudios.com/"
           />
         </div>
       </div>

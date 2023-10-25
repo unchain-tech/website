@@ -10,6 +10,8 @@ import React from 'react';
 
 type NoncedDocument = DocumentInitialProps & { nonce: string };
 
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || '';
+
 const CustomDocument = (props: NoncedDocument) => {
   return (
     <Html prefix="og: https://ogp.me/ns#" nonce={props.nonce}>
@@ -33,6 +35,23 @@ const CustomDocument = (props: NoncedDocument) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@zsh0x" />
         <meta property="csp-nonce" content={props.nonce} />
+        {/* Google Analytics 4 */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+          });
+        `,
+          }}
+        />
       </Head>
 
       <body nonce={props.nonce}>

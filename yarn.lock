@@ -122,6 +122,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.23.8":
+  version: 7.23.9
+  resolution: "@babel/runtime@npm:7.23.9"
+  dependencies:
+    regenerator-runtime: ^0.14.0
+  checksum: 6bbebe8d27c0c2dd275d1ac197fc1a6c00e18dab68cc7aaff0adc3195b45862bae9c4cc58975629004b0213955b2ed91e99eccb3d9b39cabea246c657323d667
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/template@npm:7.22.5"
@@ -1995,6 +2004,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-glob@npm:^3.3.0":
+  version: 3.3.2
+  resolution: "fast-glob@npm:3.3.2"
+  dependencies:
+    "@nodelib/fs.stat": ^2.0.2
+    "@nodelib/fs.walk": ^1.2.3
+    glob-parent: ^5.1.2
+    merge2: ^1.3.0
+    micromatch: ^4.0.4
+  checksum: 900e4979f4dbc3313840078419245621259f349950411ca2fa445a2f9a1a6d98c3b5e7e0660c5ccd563aa61abe133a21765c6c0dec8e57da1ba71d8000b05ec1
+  languageName: node
+  linkType: hard
+
 "fast-json-stable-stringify@npm:^2.0.0":
   version: 2.1.0
   resolution: "fast-json-stable-stringify@npm:2.1.0"
@@ -2850,12 +2872,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jiti@npm:^1.18.2":
-  version: 1.18.2
-  resolution: "jiti@npm:1.18.2"
+"jiti@npm:^1.19.1":
+  version: 1.21.0
+  resolution: "jiti@npm:1.21.0"
   bin:
     jiti: bin/jiti.js
-  checksum: 46c41cd82d01c6efdee3fc0ae9b3e86ed37457192d6366f19157d863d64961b07982ab04e9d5879576a1af99cc4d132b0b73b336094f86a5ce9fb1029ec2d29f
+  checksum: a7bd5d63921c170eaec91eecd686388181c7828e1fa0657ab374b9372bfc1f383cf4b039e6b272383d5cb25607509880af814a39abdff967322459cca41f2961
   languageName: node
   linkType: hard
 
@@ -3922,7 +3944,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3959,12 +3981,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:^4.9.0":
-  version: 4.9.0
-  resolution: "react-icons@npm:4.9.0"
+"react-icons@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "react-icons@npm:5.0.1"
   peerDependencies:
     react: "*"
-  checksum: 69d1000d02349cf4baa78a0882aff09723d348d910256ea7489dea777abf10f158b27c1b5d3b1d2ec030e21320eae0afcc13f9c9d11afb85a8809c59a23a923c
+  checksum: e5df9c5e3bcdb8d68bd4c5e41650c26d2a3ceda61ded0e2abf7caa0e54c9fb712badcd06f0c240cfc645a5dd15a5dc1eb5dd55f60123d86860f516b1fc456474
   languageName: node
   linkType: hard
 
@@ -3975,14 +3997,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-social-icons@npm:^5.15.0":
-  version: 5.15.0
-  resolution: "react-social-icons@npm:5.15.0"
+"react-social-icons@npm:^6.10.0":
+  version: 6.10.0
+  resolution: "react-social-icons@npm:6.10.0"
   dependencies:
-    prop-types: ^15.7.2
+    "@babel/runtime": ^7.23.8
+    react: ^18.2.0
+    react-dom: ^18.2.0
   peerDependencies:
     react: 15.x.x || 16.x.x || 17.x.x || 18.x.x
-  checksum: b93d2ca603f24825424a44a996215af261868247897bfced1ca37f8ab9dbceb14f73ed399e49b18c9f3d77faf7aad6b5f577553dc13e435d4c3bbb21bc08c278
+    react-dom: 15.x.x || 16.x.x || 17.x.x || 18.x.x
+  checksum: 38d7c924eaba074314282ff55bb5d9efe76fc8dbcf53de6bdad650edd79db8dc044a58431fa96e5238e25547877992e22396d1cd44dfe6a357170bf0b3f5679e
   languageName: node
   linkType: hard
 
@@ -4028,6 +4053,13 @@ __metadata:
   version: 0.13.11
   resolution: "regenerator-runtime@npm:0.13.11"
   checksum: 27481628d22a1c4e3ff551096a683b424242a216fee44685467307f14d58020af1e19660bf2e26064de946bad7eff28950eae9f8209d55723e2d9351e632bbb4
+  languageName: node
+  linkType: hard
+
+"regenerator-runtime@npm:^0.14.0":
+  version: 0.14.1
+  resolution: "regenerator-runtime@npm:0.14.1"
+  checksum: 9f57c93277b5585d3c83b0cf76be47b473ae8c6d9142a46ce8b0291a04bb2cf902059f0f8445dcabb3fb7378e5fe4bb4ea1e008876343d42e46d3b484534ce38
   languageName: node
   linkType: hard
 
@@ -4594,19 +4626,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.3.2":
-  version: 3.3.2
-  resolution: "tailwindcss@npm:3.3.2"
+"tailwindcss@npm:^3.4.1":
+  version: 3.4.1
+  resolution: "tailwindcss@npm:3.4.1"
   dependencies:
     "@alloc/quick-lru": ^5.2.0
     arg: ^5.0.2
     chokidar: ^3.5.3
     didyoumean: ^1.2.2
     dlv: ^1.1.3
-    fast-glob: ^3.2.12
+    fast-glob: ^3.3.0
     glob-parent: ^6.0.2
     is-glob: ^4.0.3
-    jiti: ^1.18.2
+    jiti: ^1.19.1
     lilconfig: ^2.1.0
     micromatch: ^4.0.5
     normalize-path: ^3.0.0
@@ -4618,13 +4650,12 @@ __metadata:
     postcss-load-config: ^4.0.1
     postcss-nested: ^6.0.1
     postcss-selector-parser: ^6.0.11
-    postcss-value-parser: ^4.2.0
     resolve: ^1.22.2
     sucrase: ^3.32.0
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: 4897c70e671c885e151f57434d87ccb806f468a11900f028245b351ffbca5245ff0c10ca5dbb6eb4c7c4df3de8a15a05fe08c2aea4b152cb07bee9bb1d8a14a8
+  checksum: ef5a587dd32bb4e91e1549ead6162f85f0b78d3e6ffd8b4e8eeb15585b7b886cb3af6ae9df5092ed8ccb7e590608d1b3eec79ca08c862b07cd9ff7e72f73104b
   languageName: node
   linkType: hard
 
@@ -4755,58 +4786,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo-darwin-64@npm:1.10.12":
-  version: 1.10.12
-  resolution: "turbo-darwin-64@npm:1.10.12"
+"turbo-darwin-64@npm:1.11.3":
+  version: 1.11.3
+  resolution: "turbo-darwin-64@npm:1.11.3"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-darwin-arm64@npm:1.10.12":
-  version: 1.10.12
-  resolution: "turbo-darwin-arm64@npm:1.10.12"
+"turbo-darwin-arm64@npm:1.11.3":
+  version: 1.11.3
+  resolution: "turbo-darwin-arm64@npm:1.11.3"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-linux-64@npm:1.10.12":
-  version: 1.10.12
-  resolution: "turbo-linux-64@npm:1.10.12"
+"turbo-linux-64@npm:1.11.3":
+  version: 1.11.3
+  resolution: "turbo-linux-64@npm:1.11.3"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-linux-arm64@npm:1.10.12":
-  version: 1.10.12
-  resolution: "turbo-linux-arm64@npm:1.10.12"
+"turbo-linux-arm64@npm:1.11.3":
+  version: 1.11.3
+  resolution: "turbo-linux-arm64@npm:1.11.3"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-windows-64@npm:1.10.12":
-  version: 1.10.12
-  resolution: "turbo-windows-64@npm:1.10.12"
+"turbo-windows-64@npm:1.11.3":
+  version: 1.11.3
+  resolution: "turbo-windows-64@npm:1.11.3"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-windows-arm64@npm:1.10.12":
-  version: 1.10.12
-  resolution: "turbo-windows-arm64@npm:1.10.12"
+"turbo-windows-arm64@npm:1.11.3":
+  version: 1.11.3
+  resolution: "turbo-windows-arm64@npm:1.11.3"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo@npm:^1.10.12":
-  version: 1.10.12
-  resolution: "turbo@npm:1.10.12"
+"turbo@npm:^1.11.3":
+  version: 1.11.3
+  resolution: "turbo@npm:1.11.3"
   dependencies:
-    turbo-darwin-64: 1.10.12
-    turbo-darwin-arm64: 1.10.12
-    turbo-linux-64: 1.10.12
-    turbo-linux-arm64: 1.10.12
-    turbo-windows-64: 1.10.12
-    turbo-windows-arm64: 1.10.12
+    turbo-darwin-64: 1.11.3
+    turbo-darwin-arm64: 1.11.3
+    turbo-linux-64: 1.11.3
+    turbo-linux-arm64: 1.11.3
+    turbo-windows-64: 1.11.3
+    turbo-windows-arm64: 1.11.3
   dependenciesMeta:
     turbo-darwin-64:
       optional: true
@@ -4822,7 +4853,7 @@ __metadata:
       optional: true
   bin:
     turbo: bin/turbo
-  checksum: 266b70404e149b92cd64051fcdd03c56b474ed22f6bd11cf4cf1b70f55c72f9a2aaa90109b19b95e43d68e53a6be54485f0cc0135c8d5b505db09fd126a34052
+  checksum: e9165407e7766e7764d8a7c50cfeba9b140522cd304f0fca52fa079e24e28ab653c6e5d03cface06766a91b84e9f3959e953c73c6703ce2872ea8265d0f01ee4
   languageName: node
   linkType: hard
 
@@ -4860,23 +4891,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.1.3":
-  version: 5.1.3
-  resolution: "typescript@npm:5.1.3"
+"typescript@npm:^5.3.3":
+  version: 5.3.3
+  resolution: "typescript@npm:5.3.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: d9d51862d98efa46534f2800a1071a613751b1585dc78884807d0c179bcd93d6e9d4012a508e276742f5f33c480adefc52ffcafaf9e0e00ab641a14cde9a31c7
+  checksum: 2007ccb6e51bbbf6fde0a78099efe04dc1c3dfbdff04ca3b6a8bc717991862b39fd6126c0c3ebf2d2d98ac5e960bcaa873826bb2bb241f14277034148f41f6a2
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^5.1.3#~builtin<compat/typescript>":
-  version: 5.1.3
-  resolution: "typescript@patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=77c9e2"
+"typescript@patch:typescript@^5.3.3#~builtin<compat/typescript>":
+  version: 5.3.3
+  resolution: "typescript@patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=77c9e2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 32a25b2e128a4616f999d4ee502aabb1525d5647bc8955e6edf05d7fbc53af8aa98252e2f6ba80bcedfc0260c982b885f3c09cfac8bb65d2924f3133ad1e1e62
+  checksum: f61375590b3162599f0f0d5b8737877ac0a7bc52761dbb585d67e7b8753a3a4c42d9a554c4cc929f591ffcf3a2b0602f65ae3ce74714fd5652623a816862b610
   languageName: node
   linkType: hard
 
@@ -4915,12 +4946,12 @@ __metadata:
     prettier-plugin-tailwindcss: ^0.3.0
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-icons: ^4.9.0
-    react-social-icons: ^5.15.0
+    react-icons: ^5.0.1
+    react-social-icons: ^6.10.0
     simple-git-hooks: ^2.8.1
-    tailwindcss: ^3.3.2
-    turbo: ^1.10.12
-    typescript: ^5.1.3
+    tailwindcss: ^3.4.1
+    turbo: ^1.11.3
+    typescript: ^5.3.3
   languageName: unknown
   linkType: soft
 

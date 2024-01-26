@@ -3,8 +3,6 @@ import Link from 'next/link';
 import UNCHAIN_icon from 'public/UNCHAIN_icon.png';
 import { FC } from 'react';
 
-import Events from './events';
-
 import { useWindowDimensions } from '@/hooks/useWindowDimensions';
 
 export const Joinus = () => {
@@ -25,8 +23,7 @@ export const Joinus = () => {
 
   return (
     <div id="Join us" className="relative bg-brand-onyx text-brand-white">
-      <div id="container" className="space-y-8 px-6 pb-16">
-        <Events />
+      <div id="container" className="space-y-8 laptop:space-y-16 px-6 pb-16">
         <div
           id="slogan and logo"
           className="flex flex-row justify-between pt-16"
@@ -48,8 +45,13 @@ export const Joinus = () => {
           />
         </div>
 
-        <div className="flex justify-center hover:no-underline">
-          <Link id="join_community" href="https://app.unchain.tech/" passHref>
+        <div className="flex justify-center">
+          <Link
+            id="join_community"
+            className="hover:no-underline"
+            href="https://discord.gg/w3AyyvKypT"
+            passHref
+          >
             <button className="btn flex items-center space-x-2 bg-brand-red px-16 py-4 text-2xl hover:bg-brand-blue">
               <p>Join UNCHAIN</p>
             </button>

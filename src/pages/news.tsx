@@ -19,7 +19,7 @@ export const News: FC = (
   const separators = ['。', '｜'];
   return (
     <Layout pageTitle="Latest News">
-      <div id="container" className="mt-32 space-y-16 px-16">
+      <div id="container" className="py-32 space-y-16 px-16">
         <h2 className="">NEWS</h2>
         <div
           id="newsgrid"
@@ -65,6 +65,7 @@ export default News;
 
 export const getStaticProps: GetStaticProps = async () => {
   const newsURLs = [
+    'https://www.neweconomy.jp/posts/363923',
     'https://www.neweconomy.jp/posts/324285',
     'https://note.com/shiftbase/n/n9b87f31b6543',
     'https://note.com/shiftbase/n/ne14492e75038',
@@ -78,7 +79,9 @@ export const getStaticProps: GetStaticProps = async () => {
   const metadataList = await Promise.all(
     newsURLs.map(async (x) => {
       const json: NewsMetadata = await fetch(
-        `https://jsonlink.io/api/extract?url=${encodeURI(x)}`
+        `https://jsonlink.io/api/extract?url=${encodeURI(x)}&api_key=${
+          process.env.JSONLINK_API_KEY
+        }`
       ).then((res) => res.json());
 
       return json;

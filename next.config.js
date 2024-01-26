@@ -7,6 +7,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'assets.st-note.com' },
+      { protocol: 'https', hostname: 'prcdn.freetls.fastly.net' },
       { protocol: 'https', hostname: 'prtimes.jp' },
       { protocol: 'https', hostname: 'raw.githubusercontent.com' },
       { protocol: 'https', hostname: 's3.*.amazonaws.com' },

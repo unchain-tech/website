@@ -7,7 +7,6 @@ import FirstView from '@/components/sections/firstview';
 import Joinus from '@/components/sections/joinus';
 import Projects from '@/components/sections/projects';
 import Services from '@/components/sections/services';
-import Supporters from '@/components/sections/supporters';
 
 export const Home: FC = () => {
   return (
@@ -24,7 +23,6 @@ export const Home: FC = () => {
         <FirstView />
         <Projects />
         <Services />
-        <Supporters />
         <Joinus />
       </div>
     </Layout>

@@ -19,7 +19,7 @@ export const News: FC = (
   const separators = ['。', '｜'];
   return (
     <Layout pageTitle="Latest News">
-      <div id="container" className="mt-32 space-y-16 px-16">
+      <div id="container" className="py-32 space-y-16 px-16">
         <h2 className="">NEWS</h2>
         <div
           id="newsgrid"

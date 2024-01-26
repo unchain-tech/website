@@ -45,15 +45,9 @@ export const NavMenu: FC = () => {
           props.open ? '' : 'hidden '
         }absolute inset-y-16 right-4 flex flex-col items-end space-y-2 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-x-6 laptop:space-y-0`}
       >
-        <Item id="start" href="https://discord.gg/w3AyyvKypT/" text="Join" />
+        <Item id="start" href="https://discord.gg/w3AyyvKypT/" text="Join us" />
         <Item id="news" href="/news" text="News" />
-
-        {/* contact */}
-        <Item
-          id="contact"
-          href="https://shiftbase.xyz/contact"
-          text="Contact"
-        />
+        {/* <Item id="contact" href="/contact" text="Contact" /> */}
 
         {/* language switch */}
         {/* <Link

@@ -12,6 +12,7 @@ export const Footer: FC = () => {
           label="Discord"
           target="_blank"
           rel="noreferrer"
+          style={{ height: 72, width: 72 }}
         />
         <SocialIcon
           url="https://github.com/unchain-tech"
@@ -20,6 +21,7 @@ export const Footer: FC = () => {
           label="Github"
           target="_blank"
           rel="noreferrer"
+          style={{ height: 72, width: 72 }}
         />
       </div>
     );

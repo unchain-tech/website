@@ -48,8 +48,13 @@ export const Joinus = () => {
           />
         </div>
 
-        <div className="flex justify-center hover:no-underline">
-          <Link id="join_community" href="https://app.unchain.tech/" passHref>
+        <div className="flex justify-center">
+          <Link
+            id="join_community"
+            className="hover:no-underline"
+            href="https://discord.gg/w3AyyvKypT"
+            passHref
+          >
             <button className="btn flex items-center space-x-2 bg-brand-red px-16 py-4 text-2xl hover:bg-brand-blue">
               <p>Join UNCHAIN</p>
             </button>

@@ -45,8 +45,7 @@ export const NavMenu: FC = () => {
           props.open ? '' : 'hidden '
         }absolute inset-y-16 right-4 flex flex-col items-end space-y-2 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-x-6 laptop:space-y-0`}
       >
-        {/* Portal */}
-        <Item id="start" href="https://app.unchain.tech/" text="Start" />
+        <Item id="start" href="https://discord.gg/w3AyyvKypT/" text="Join" />
         <Item id="news" href="/news" text="News" />
 
         {/* contact */}
@@ -54,7 +53,6 @@ export const NavMenu: FC = () => {
           id="contact"
           href="https://shiftbase.xyz/contact"
           text="Contact"
-          newpage
         />
 
         {/* language switch */}

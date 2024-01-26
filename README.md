@@ -1,8 +1,8 @@
-# UNCHAIN official landing page
+# UNCHAIN landing page
 
 ### Development
 
-CI Status: [![CI status (main)](https://github.com/shiftbase-inc/UNCHAIN-LP/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/shiftbase-inc/UNCHAIN-LP/actions/workflows/test.yml)
+CI Status: [![CI status (main)](https://github.com/unchain-tech/LP/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/unchain-tech/LP/actions/workflows/test.yml)
 
 ## Features
 

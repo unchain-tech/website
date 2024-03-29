@@ -1,45 +1,14 @@
 import Link from 'next/link';
-import { FC, useState } from 'react';
+import { FC } from 'react';
 
 import SupportedNetworks from './supportednetworks';
 
 export const FirstView: FC = () => {
-  const DeprecationNotice = () => {
-    const [isModalClosed, setModalClose] = useState(false);
-
-    return (
-      <div
-        className={`fixed bg-brand-onyx text-start top-[16vh] left-[2vw] max-w-[96vw] z-20 ${
-          isModalClosed ? 'hidden' : ''
-        }`}
-      >
-        <button
-          className="absolute -top-8 left-0 text-2xl text-warning"
-          onClick={() => {
-            setModalClose(true);
-          }}
-        >
-          x
-        </button>
-        <div className="border border-warning rounded p-2 leading-loose">
-          <p>
-            2024/01/31をもちまして、株式会社shiftbaseによるUNCHAINのサービス提供は終了いたします。
-            <br />
-            以後の問い合わせや運営については、UNCHAIN
-            discordより直接ご連絡ください。
-          </p>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div
       id="firstview"
-      className="supports-[height:100cqh]:h-[100cqh] supports-[height:100svh]:h-[100svh] flex flex-col justify-end space-y-12" // works with mobile viewports too
+      className="flex flex-col justify-end space-y-12 supports-[height:100cqh]:h-[100cqh] supports-[height:100svh]:h-[100svh]" // works with mobile viewports too
     >
-      <DeprecationNotice />
-
       <div id="section container" className="px-6 desktop:px-32">
         <div id="slogan" className="pb-4 pt-8">
           <h1 className="text-brand-yellow">
@@ -58,7 +27,7 @@ export const FirstView: FC = () => {
 
         <Link
           id="start_building"
-          href="https://github.com/unchain-tech/UNCHAIN-projects/"
+          href="https://unchain-tech.github.io/UNCHAIN-projects-feature/"
           passHref
         >
           <button className="btn my-2 bg-brand-red px-12 hover:bg-brand-blue desktop:my-4">

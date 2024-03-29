@@ -10,5 +10,8 @@ module.exports = {
   importOrderGroupNamespaceSpecifiers: true,
   importOrderCaseInsensitive: true,
   tailwindConfig: './tailwind.config.js',
-  plugins: ['prettier-plugin-tailwindcss'],
+  plugins: [
+    'prettier-plugin-tailwindcss',
+    '@trivago/prettier-plugin-sort-imports',
+  ],
 };

@@ -23,7 +23,7 @@ export const Joinus = () => {
 
   return (
     <div id="Join us" className="relative bg-brand-onyx text-brand-white">
-      <div id="container" className="space-y-8 laptop:space-y-16 px-6 pb-16">
+      <div id="container" className="space-y-8 px-6 pb-16 laptop:space-y-16">
         <div
           id="slogan and logo"
           className="flex flex-row justify-between pt-16"

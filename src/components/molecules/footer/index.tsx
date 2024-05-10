@@ -30,11 +30,11 @@ export const Footer: FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-4 bg-white">
-      <div className="text-center space-y-2">
+    <footer className="bg-white py-4">
+      <div className="space-y-2 text-center">
         <Socials />
-        <div className="font-sans text-black text-sm desktop:text-base">
-          {currentYear} &copy; UNCHAIN - Licensed under MIT license.
+        <div className="font-sans text-sm text-black desktop:text-base">
+          2022 - {currentYear} &copy; UNCHAIN
         </div>
       </div>
     </footer>

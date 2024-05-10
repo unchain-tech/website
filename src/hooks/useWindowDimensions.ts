@@ -12,14 +12,15 @@ export const useWindowDimensions = (): WindowDimentions => {
   });
 
   useEffect(() => {
-    function handleResize(): void {
+    const handleResize = () => {
       setWindowDimensions({
         width: window.innerWidth,
         height: window.innerHeight,
       });
-    }
+    };
     handleResize();
     window.addEventListener('resize', handleResize);
+    return (): void => window.removeEventListener('resize', handleResize);
   }, []);
 
   return windowDimensions;

@@ -1,6 +1,5 @@
-Contact: https://openbugbounty.org/bugbounty/zsh0x
-Expires: 2024-04-07T23:37:07.000Z
+Contact: admin@unchain.tech
+Expires: 2025-05-10T23:35:00.000Z
 Preferred-Languages: en, ja
 Canonical: https://unchain.tech/.well-known/security.txt
-Hiring: https://shiftbase.xyz/careers
 OpenBugBounty: https://openbugbounty.org/bugbounty/zsh0x

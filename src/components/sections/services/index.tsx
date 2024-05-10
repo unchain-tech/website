@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { FC } from 'react';
 
 export const Services: FC = () => {
@@ -58,19 +57,6 @@ export const Services: FC = () => {
             heading="NFTで学習歴を証明"
             description="各メンバーのコミュニティでの活動や貢献の証を、トークンを用いてブロックチェーン上に発行しています。"
           />
-        </div>
-
-        <div id="button" className="flex justify-center">
-          <Link
-            id="learn_more"
-            href="https://unchain-shiftbase.notion.site/web3-UNCHAIN-964d92e24cd045bcbdd8848203985ba7"
-            passHref={true}
-            target="_blank"
-          >
-            <button className="btn bg-neutral-700 px-12 text-brand-white hover:bg-brand-blue desktop:px-12 desktop:py-4">
-              Learn more about UNCHAIN
-            </button>
-          </Link>
         </div>
       </div>
     </div>

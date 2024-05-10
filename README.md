@@ -1,8 +1,6 @@
 # UNCHAIN landing page
 
-### Development
-
-CI Status: [![CI status (main)](https://github.com/unchain-tech/LP/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/unchain-tech/LP/actions/workflows/test.yml)
+CI Status: [![CI status (main)](https://github.com/neila/unchain-lp/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/neila/unchain-lp/actions/workflows/test.yml)
 
 ## Features
 

@@ -9,15 +9,15 @@ export const config = {
 
 const generateCspHeader = (nonce: string): string => {
   const csp = [
-    `default-src 'strict-dynamic' 'nonce-${nonce}' 'self' https://*.shiftbase.xyz https://*.unchain.tech`,
+    `default-src 'strict-dynamic' 'nonce-${nonce}' 'self' https://*.unchain.tech`,
     `script-src ${
       process.env.NODE_ENV === 'development'
         ? "'unsafe-eval' 'unsafe-inline'"
         : `'nonce-${nonce}'`
-    } 'self' https://*.shiftbase.xyz https://*.unchain.tech https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com`,
-    "style-src 'unsafe-inline' 'self' https://*.shiftbase.xyz https://*.unchain.tech",
-    "img-src 'self' https://*.shiftbase.xyz https://*.unchain.tech https://www.googletagmanager.com https://www.google-analytics.com",
-    "connect-src 'self' https://*.shiftbase.xyz https://*.unchain.tech https://www.google-analytics.com",
+    } 'self' https://*.unchain.tech https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com`,
+    "style-src 'unsafe-inline' 'self' https://*.unchain.tech",
+    "img-src 'self' https://*.unchain.tech https://www.googletagmanager.com https://www.google-analytics.com",
+    "connect-src 'self' https://*.unchain.tech https://api.airtable.com https://www.google-analytics.com",
     "object-src 'self'",
     "base-uri 'self'",
   ].join('; ');

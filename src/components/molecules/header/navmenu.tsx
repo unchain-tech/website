@@ -1,10 +1,7 @@
 import { Spin as Hamburger } from 'hamburger-react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { useState } from 'react';
 import type { FC } from 'react';
-
-import { useLocale } from '@/hooks/useLocale';
 
 const Item: FC<{
   id: string;
@@ -24,7 +21,7 @@ const Item: FC<{
         className="rounded-md bg-brand-onyx px-3 py-2
                   font-sans font-semibold tracking-widest text-brand-white outline
                   outline-1 outline-brand-yellow hover:bg-brand-onyx laptop:rounded-xl
-                laptop:bg-transparent laptop:outline-0 laptop:hover:outline-1"
+                  laptop:bg-transparent laptop:outline-0 laptop:hover:outline-1"
       >
         {text}
       </div>
@@ -45,9 +42,13 @@ export const NavMenu: FC = () => {
           props.open ? '' : 'hidden '
         }absolute inset-y-16 right-4 flex flex-col items-end space-y-2 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-x-6 laptop:space-y-0`}
       >
-        <Item id="start" href="https://discord.gg/w3AyyvKypT/" text="Join us" />
-        <Item id="news" href="/news" text="News" />
-        {/* <Item id="contact" href="/contact" text="Contact" /> */}
+        <Item id="start" href="https://discord.gg/w3AyyvKypT/" text="JOIN" />
+        <Item
+          id="start"
+          href="https://unchain-tech.github.io/UNCHAIN-projects-feature/"
+          text="BUIDL"
+        />
+        <Item id="contact" href="/contact" text="CONTACT" />
 
         {/* language switch */}
         {/* <Link

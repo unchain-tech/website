@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 
 import { Layout } from '@/components/layouts/baseLayout';
-import ContactForm from '@/components/molecules/contactform/server';
+import ContactFormDangerous from '@/components/molecules/contactform/static';
 
 const Contact: NextPage = () => {
   return (
@@ -11,19 +11,7 @@ const Contact: NextPage = () => {
           CONTACT FORM
         </h2>
         <div className="mx-auto mt-8 laptop:w-2/3">
-          <p className="text-center">
-            UNCHAIN is{' '}
-            <a
-              className="font-sans font-normal leading-relaxed tracking-wider"
-              href="https://www.neweconomy.jp/posts/363923"
-              target="_blank"
-            >
-              no longer
-            </a>{' '}
-            under management of shiftbase Inc. Submissions will be directed to
-            the inbox of community admins.
-          </p>
-          <ContactForm />
+          <ContactFormDangerous />
         </div>
       </div>
     </Layout>

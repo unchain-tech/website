@@ -1,34 +1,20 @@
 import AirtableError from 'airtable/lib/airtable_error';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import { table_websiteInquiry } from '@/utils/airtable';
+import { type FormInput } from '@/types/form';
+import {
+  table_websiteInquiry,
+  validateEmailRegex,
+  validateWalletAddressRegex,
+} from '@/utils/form';
 import rateLimit from '@/utils/rateLimit';
-
-type SubmittedRecord = {
-  name: string;
-  organization: string;
-  email: string;
-  inquiry: string;
-};
 
 type ResponseData = {
   message: string;
-  posted: SubmittedRecord;
+  posted: FormInput;
 };
 
 const limitCheck = rateLimit();
-
-const validateEmail = (email: string) => {
-  const re =
-    /^([a-zA-Z0-9_-]+(?:.[a-zA-Z0-9_-]+)*)@((?:[a-zA-Z0-9_-]+.)*[a-zA-Z0-9_][a-zA-Z0-9_-]{0,66})[.]([a-z]{2,6}(?:.[a-z]{2})?)$/;
-  return re.test(email);
-};
-
-// const validateWalletAddress = (address: string) => {
-//   const re = /^0x[a-fA-F0-9]{40}$/;
-//   const re_ens = /^([a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\.eth$/;
-//   return re.test(address) || re_ens.test(address);
-// };
 
 export default async function handler(
   req: NextApiRequest,
@@ -55,7 +41,7 @@ export default async function handler(
 
   switch (req.method) {
     case 'POST': {
-      const newInquiry: SubmittedRecord = req.body;
+      const newInquiry: FormInput = req.body;
       if (!newInquiry) {
         return res.status(400).end('Missing application form.');
       }
@@ -78,7 +64,10 @@ export default async function handler(
           .status(400)
           .end('Invalid organization. (min 2 char, max 50 char)');
       }
-      if (!validateEmail(email)) {
+      if (!validateEmailRegex(email)) {
+        return res.status(400).end('Invalid email address.');
+      }
+      if (!validateWalletAddressRegex(email)) {
         return res.status(400).end('Invalid email address.');
       }
       if (
@@ -100,7 +89,7 @@ export default async function handler(
         });
         return res.status(201).json({
           message: 'POST',
-          posted: newRecords.fields as SubmittedRecord,
+          posted: newRecords.fields as FormInput,
         });
       } catch (err) {
         return res

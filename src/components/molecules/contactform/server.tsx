@@ -2,7 +2,9 @@ import SendIcon from '@mui/icons-material/Send';
 import {
   Alert,
   Button,
+  Checkbox,
   createTheme,
+  FormControlLabel,
   TextField,
   ThemeProvider,
 } from '@mui/material';
@@ -10,20 +12,10 @@ import { useRouter } from 'next/router';
 import { FC, useState } from 'react';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
 
-type FormInput = {
-  name: string;
-  organization: string;
-  department: string;
-  address: string;
-  phone: string;
-  email: string;
-  inquiry: string;
-  privacy: boolean;
-};
+import { type FormInput } from '@/types/form';
 
 const ContactForm: FC = () => {
   const router = useRouter();
-
   const {
     register,
     handleSubmit,
@@ -34,7 +26,9 @@ const ContactForm: FC = () => {
       name: '',
       organization: '',
       email: '',
+      wallet: '',
       inquiry: '',
+      privacy: false,
     },
   });
 
@@ -44,7 +38,7 @@ const ContactForm: FC = () => {
     if (!sendStatus) {
       setSendStatus(1);
       // send to endpoint
-      fetch('/api/formsend', {
+      fetch('/api/submitform', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' },
@@ -163,6 +157,25 @@ const ContactForm: FC = () => {
           />
 
           <Controller
+            name="wallet"
+            control={control}
+            render={({ field }) => (
+              <TextField
+                sx={{ mb: 1 }}
+                variant="filled"
+                label="wallet address*"
+                disabled={!!sendStatus}
+                {...register('wallet', {
+                  required: 'Your wallet address is required',
+                })}
+                error={!!errors.wallet}
+                helperText={errors?.wallet ? errors.wallet.message : '\u00a0'}
+                {...field}
+              />
+            )}
+          />
+
+          <Controller
             name="inquiry"
             control={control}
             render={({ field }) => (
@@ -186,6 +199,45 @@ const ContactForm: FC = () => {
               />
             )}
           />
+
+          <div className="mx-auto">
+            <FormControlLabel
+              name="privacy"
+              sx={{ mb: 1 }}
+              control={
+                <Controller
+                  name="privacy"
+                  control={control}
+                  defaultValue={true}
+                  render={({ field: { value, ref, ...field } }) => (
+                    <Checkbox
+                      {...field}
+                      inputRef={ref}
+                      checked={value}
+                      color="primary"
+                      disabled={!!sendStatus}
+                      required
+                    />
+                  )}
+                />
+              }
+              label={
+                <div className="flex flex-row space-x-1">
+                  <p>
+                    <a
+                      href="https://example.com"
+                      className="text-sm font-light underline"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      プライバシーポリシー
+                    </a>
+                    <span className="hover:no-cursor text-sm">に同意</span>
+                  </p>
+                </div>
+              }
+            />
+          </div>
 
           <PopupAlerts status={sendStatus} />
           <div className="mx-auto">

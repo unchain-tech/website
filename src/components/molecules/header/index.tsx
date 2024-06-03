@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FC } from 'react';
 
 import { NavMenu } from './navmenu';
-import UNCHAIN_logo from '/public/UNCHAIN_logo.png';
+import UNCHAIN_logo from '/public/logo/UNCHAIN_logo_ondark.png';
 
 export const Header: FC = () => {
   return (

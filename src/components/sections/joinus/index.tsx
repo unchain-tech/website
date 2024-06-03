@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import UNCHAIN_icon from 'public/UNCHAIN_icon.png';
+import UNCHAIN_icon from 'public/logo/UNCHAIN_icon.png';
 import { FC } from 'react';
 
 import { useWindowDimensions } from '@/hooks/useWindowDimensions';

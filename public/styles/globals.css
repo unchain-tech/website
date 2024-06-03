@@ -16,7 +16,7 @@
     @apply font-dazzle text-xl font-medium tracking-wide;
   }
   a {
-    @apply font-dazzle text-base font-light hover:underline desktop:text-xl;
+    @apply cursor-pointer font-dazzle text-base font-light hover:underline desktop:text-xl;
   }
   p {
     @apply text-base font-normal leading-relaxed tracking-wider desktop:text-xl;
@@ -41,26 +41,26 @@
 
 @font-face {
   font-family: 'dazzle_unicase';
-  src: url('../fonts/DazzleUnicase-Heavy.otf') format('opentype');
+  src: url('../font/DazzleUnicase-Heavy.otf') format('opentype');
   font-weight: 900;
 }
 @font-face {
   font-family: 'dazzle_unicase';
-  src: url('../fonts/DazzleUnicase-Bold.otf') format('opentype');
+  src: url('../font/DazzleUnicase-Bold.otf') format('opentype');
   font-weight: 700;
 }
 @font-face {
   font-family: 'dazzle_unicase';
-  src: url('../fonts/DazzleUnicase-Medium.otf') format('opentype');
+  src: url('../font/DazzleUnicase-Medium.otf') format('opentype');
   font-weight: 500;
 }
 @font-face {
   font-family: 'dazzle_unicase';
-  src: url('../fonts/DazzleUnicase-Light.otf') format('opentype');
+  src: url('../font/DazzleUnicase-Light.otf') format('opentype');
   font-weight: 300;
 }
 @font-face {
   font-family: 'dazzle_unicase';
-  src: url('../fonts/DazzleUnicase-Thin.otf') format('opentype');
+  src: url('../font/DazzleUnicase-Thin.otf') format('opentype');
   font-weight: 100;
 }

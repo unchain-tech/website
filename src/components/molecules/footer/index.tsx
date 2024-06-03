@@ -33,6 +33,14 @@ export const Footer: FC = () => {
     <footer className="bg-white py-4">
       <div className="space-y-2 text-center">
         <Socials />
+        <a
+          href="https://unchain-tech.notion.site/press-kit-45cd241d7ae64937882e36b93e794e45?pvs=4"
+          className="font-sans text-black"
+          target="_blank"
+          rel="noreferrer"
+        >
+          press kit
+        </a>
         <div className="font-sans text-sm text-black desktop:text-base">
           2022 - {currentYear} &copy; UNCHAIN
         </div>

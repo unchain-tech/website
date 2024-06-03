@@ -106,8 +106,3 @@ export default async function handler(
     }
   }
 }
-
-// necessary for netlify functions
-// export const config = {
-//   type: 'experimental-background',
-// };

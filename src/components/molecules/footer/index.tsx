@@ -6,6 +6,15 @@ export const Footer: FC = () => {
     return (
       <div className="space-x-4">
         <SocialIcon
+          url="https://twitter.com/UNCHAIN_tech"
+          bgColor="white"
+          fgColor="#1DA1F2"
+          label="Twitter"
+          target="_blank"
+          rel="noreferrer"
+          style={{ height: 72, width: 72 }}
+        />
+        <SocialIcon
           url="https://discord.gg/w3AyyvKypT"
           bgColor="white"
           fgColor="#7289DA"

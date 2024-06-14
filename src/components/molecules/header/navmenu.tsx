@@ -18,7 +18,7 @@ const Item: FC<{
       className="hover:no-underline"
     >
       <div
-        className="rounded-md bg-brand-onyx px-3 py-2
+        className="rounded-md bg-brand-onyx px-3 py-2 text-3xl
                   font-sans font-semibold tracking-widest text-brand-white outline
                   outline-1 outline-brand-yellow hover:bg-brand-onyx laptop:rounded-xl
                   laptop:bg-transparent laptop:outline-0 laptop:hover:outline-1"
@@ -40,7 +40,7 @@ export const NavMenu: FC = () => {
         id="nav menu"
         className={`${
           props.open ? '' : 'hidden '
-        }absolute inset-y-16 right-4 flex flex-col items-end space-y-2 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-x-6 laptop:space-y-0`}
+        }absolute inset-y-28 right-4 flex flex-col items-end space-y-2 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-x-6 laptop:space-y-0`}
       >
         <Item id="start" href="https://discord.gg/w3AyyvKypT/" text="JOIN" />
         <Item id="start" href="https://buidl.unchain.tech/" text="BUIDL" />

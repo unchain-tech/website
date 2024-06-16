@@ -25,11 +25,7 @@ export const FirstView: FC = () => {
           UNCHAINは、プロジェクト開発を通して技術を学び、実践経験を積むことで自分のアイデアを形にする力を身につける、エンジニアのための有志コミュニティです。
         </p>
 
-        <Link
-          id="start_building"
-          href="https://unchain-tech.github.io/UNCHAIN-projects-feature/"
-          passHref
-        >
+        <Link id="start_building" href="https://buidl.unchain.tech/" passHref>
           <button className="btn my-2 bg-brand-red px-12 hover:bg-brand-blue desktop:my-4">
             Start Building
           </button>

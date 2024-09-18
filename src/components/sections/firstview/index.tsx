@@ -3,7 +3,10 @@ import { FC } from 'react';
 
 import SupportedNetworks from './supportednetworks';
 
+import { useI18n } from '@/hooks/useI18n';
+
 export const FirstView: FC = () => {
+  const { t } = useI18n();
   return (
     <div
       id="firstview"
@@ -22,7 +25,7 @@ export const FirstView: FC = () => {
           id="blurb"
           className="w-5/6 py-2 text-base laptop:w-1/2 desktop:py-4 desktop:text-lg"
         >
-          UNCHAINは、プロジェクト開発を通して技術を学び、実践経験を積むことで自分のアイデアを形にする力を身につける、エンジニアのための有志コミュニティです。
+          {t('TOP.INTRO')}
         </p>
 
         <Link id="start_building" href="https://buidl.unchain.tech/" passHref>

@@ -25,7 +25,9 @@ export const Layout: FC<Props> = ({ pageTitle, children }) => {
 
       <main>
         <Header />
-        <div id="body">{children}</div>
+        <div id="body" className="pt-24">
+          {children}
+        </div>
         <Footer />
       </main>
     </>

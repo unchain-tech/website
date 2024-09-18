@@ -13,6 +13,8 @@ import { useRouter } from 'next/router';
 import { FC, useState } from 'react';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
 
+import { useI18n } from '@/hooks/useI18n';
+import { languageDetector } from '@/lib/languageDetector';
 import { type FormInput } from '@/types/form';
 import {
   table_websiteInquiry,
@@ -22,6 +24,9 @@ import {
 
 const ContactFormDangerous: FC = () => {
   const router = useRouter();
+  const { t } = useI18n();
+  const detectedLng = languageDetector.detect();
+
   const {
     register,
     handleSubmit,
@@ -276,15 +281,28 @@ const ContactFormDangerous: FC = () => {
               label={
                 <div className="flex flex-row space-x-1">
                   <p>
+                    {detectedLng == 'en' ? (
+                      <span className="hover:no-cursor text-sm">
+                        Agree to the{' '}
+                      </span>
+                    ) : (
+                      <></>
+                    )}
+
                     <a
                       href="https://example.com"
                       className="text-sm font-light underline"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      プライバシーポリシー
+                      {t('PRIVACY POLICY')}
                     </a>
-                    <span className="hover:no-cursor text-sm">に同意</span>
+
+                    {detectedLng == 'ja' ? (
+                      <span className="hover:no-cursor text-sm">に同意</span>
+                    ) : (
+                      <></>
+                    )}
                   </p>
                 </div>
               }

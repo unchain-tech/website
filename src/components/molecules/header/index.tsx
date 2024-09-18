@@ -24,7 +24,7 @@ export const Header: FC = () => {
       </button>
       <NavMenu />
       {/* Language */}
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center px-2 space-x-2">
         <LanguageSwitcher locale="en" />
         <span>/</span>
         <LanguageSwitcher locale="ja" />

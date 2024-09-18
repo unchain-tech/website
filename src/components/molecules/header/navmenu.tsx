@@ -45,16 +45,6 @@ export const NavMenu: FC = () => {
         <Item id="start" href="https://discord.gg/w3AyyvKypT/" text="JOIN" />
         <Item id="start" href="https://buidl.unchain.tech/" text="BUIDL" />
         <Item id="contact" href="/contact" text="CONTACT" />
-
-        {/* language switch */}
-        {/* <Link
-          className="header-menuitem"
-          href={t.LOCALESWITCH + page.pathname}
-          locale={t.LOCALESWITCH}
-          passHref={true}
-        >
-          {t.MENU.LANGUAGE}
-        </Link> */}
       </div>
     );
   };

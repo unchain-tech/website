@@ -37,7 +37,7 @@ export const LanguageSwitcher = ({
       }
     >
       <button type="button">
-        <p>{locale}</p>
+        <p className="text-xl">{locale}</p>
       </button>
     </Link>
   );

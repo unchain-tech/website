@@ -3,10 +3,12 @@ import lessoncards_wide from 'public/projects_wide.png';
 import lessoncards_widest from 'public/projects_widest.png';
 import { FC } from 'react';
 
+import { useI18n } from '@/hooks/useI18n';
 import { useWindowDimensions } from '@/hooks/useWindowDimensions';
 
 export const Projects: FC = () => {
   const { width } = useWindowDimensions();
+  const { t } = useI18n();
 
   const BannerImage = () => {
     if (width! < 1025) {
@@ -42,11 +44,10 @@ export const Projects: FC = () => {
 
         <div id="items" className="w-3/4 space-y-2 pt-4 desktop:pt-8">
           <p className="text-xs leading-relaxed desktop:text-lg">
-            ✅ public
-            chain上でdApp開発を実践できる、25の開発プロジェクトをオープンソースで提供
+            ✅ {t('PROJECTS.1')}
           </p>
           <p className="text-xs leading-relaxed desktop:text-lg">
-            ✅ ブロックチェーンアプリの開発歴をNFTで証明
+            ✅ {t('PROJECTS.1')}
           </p>
         </div>
       </div>

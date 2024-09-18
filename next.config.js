@@ -3,7 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   swcMinify: true,
-  // i18n: { locales: ['en', 'ja'], defaultLocale: 'en', localeDetection: false },
   images: {
     unoptimized: true,
     remotePatterns: [

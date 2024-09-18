@@ -1,0 +1,29 @@
+{
+  "LOCALESWITCH": "ja",
+  "MENU": { "LANGUAGE": "日本語" },
+  "TOP": {
+    "INTRO": "UNCHAIN is a grassroots community of web3 engineers, turning to their ideas into reality."
+  },
+  "PROJECTS": {
+    "1": "Hands-on tutorials to help you understand how to build dApps on public blockchains.",
+    "2": "Completely free and open-source."
+  },
+  "VALUES": {
+    "1": {
+      "HEADING": "Project-Based Learning",
+      "DESCRIPTION": "Gain practical development skills in smart contracts and web applications through a wide range of hands-on, project based tutorials."
+    },
+    "2": {
+      "HEADING": "Community Growth",
+      "DESCRIPTION": "Find other people with similar passions, and share ideas with each other for mutual growth."
+    },
+    "3": {
+      "HEADING": "Open-Source",
+      "DESCRIPTION": "Anyone can see and verify our projects, and even contribute to it themselves. Everything is provided free and to the public."
+    }
+  },
+  "CONTACT": {
+    "TITLE": "CONTACT FORM"
+  },
+  "PRIVACYPOLICY": "Privacy Policy"
+}

@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import { FC } from 'react';
 
+import { useI18n } from '@/hooks/useI18n';
+
 export const Services: FC = () => {
+  const { t } = useI18n();
   const Card = ({
     iconType,
     heading,
@@ -44,18 +47,18 @@ export const Services: FC = () => {
         >
           <Card
             iconType="1"
-            heading="プロジェクト型の学習"
-            description="プロジェクト型の学習コンテンツを通して、スマートコントラクトやweb開発の実践的なスキルを身につけることができます。"
+            heading={t('VALUES.1.HEADING')}
+            description={t('VALUES.1.DESCRIPTION')}
           />
           <Card
             iconType="2"
-            heading="共に学ぶコミュニティ"
-            description="同じ興味や志を持つ仲間を見つけ、互いの知見を共有し合うことで、切磋琢磨することができます。"
+            heading={t('VALUES.2.HEADING')}
+            description={t('VALUES.2.DESCRIPTION')}
           />
           <Card
             iconType="3"
-            heading="NFTで学習歴を証明"
-            description="各メンバーのコミュニティでの活動や貢献の証を、トークンを用いてブロックチェーン上に発行しています。"
+            heading={t('VALUES.3.HEADING')}
+            description={t('VALUES.3.DESCRIPTION')}
           />
         </div>
       </div>

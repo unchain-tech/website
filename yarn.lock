@@ -124,6 +124,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:7.16.7":
+  version: 7.16.7
+  resolution: "@babel/runtime@npm:7.16.7"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 47912f0aaacd1cab2e2552aaf3e6eaffbcaf2d5ac9b07a89a12ac0d42029cb92c070b0d16f825e4277c4a34677c54d8ffe85e1f7c6feb57de58f700eec67ce2f
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.8, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7":
   version: 7.24.5
   resolution: "@babel/runtime@npm:7.24.5"
@@ -2962,6 +2971,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"i18next-browser-languagedetector@npm:7.2.0":
+  version: 7.2.0
+  resolution: "i18next-browser-languagedetector@npm:7.2.0"
+  dependencies:
+    "@babel/runtime": ^7.23.2
+  checksum: 757845c7ae7dfc541f5150855c3a3e4f6d29bcee113796d44dc781594abc7f16f2750a2a70d786904c16d23ba952eba2741c0bcfeaa381016669522a6236998f
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
@@ -3861,6 +3879,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-language-detector@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "next-language-detector@npm:1.1.0"
+  dependencies:
+    "@babel/runtime": 7.16.7
+    i18next-browser-languagedetector: 7.2.0
+  checksum: b6ceca6e2e6ddee309baaef4de12bf024a5d775a22e3803a8eca14ac2b6c8f71c2e81c29ad1d4b7dc3a1215c7e1352d7546d717db73d8d515bcf56177ca6267d
+  languageName: node
+  linkType: hard
+
+"next-translate@npm:^2.6.2":
+  version: 2.6.2
+  resolution: "next-translate@npm:2.6.2"
+  peerDependencies:
+    next: ">= 13.2.5"
+    react: ">= 18.0.0"
+  checksum: 99508f853b40e4c9de5bb26d7409869f512d1818d567edf194408908c695ce8ded5b5aca5224e1fb54e2e51da2174e7d243e07c2800ce1b2d47b90a68394823d
+  languageName: node
+  linkType: hard
+
 "next@npm:^14.1.4":
   version: 14.2.3
   resolution: "next@npm:14.2.3"
@@ -4609,6 +4647,13 @@ __metadata:
     globalthis: ^1.0.3
     which-builtin-type: ^1.1.3
   checksum: 88e9e65a7eaa0bf8e9a8bbf8ac07571363bc333ba8b6769ed5e013e0042ed7c385e97fae9049510b3b5fe4b42472d8f32de9ce8ce84902bc4297d4bbe3777dba
+  languageName: node
+  linkType: hard
+
+"regenerator-runtime@npm:^0.13.4":
+  version: 0.13.11
+  resolution: "regenerator-runtime@npm:0.13.11"
+  checksum: 27481628d22a1c4e3ff551096a683b424242a216fee44685467307f14d58020af1e19660bf2e26064de946bad7eff28950eae9f8209d55723e2d9351e632bbb4
   languageName: node
   linkType: hard
 
@@ -5504,6 +5549,8 @@ __metadata:
     lint-staged: ^15.2.2
     lru-cache: ^10.2.0
     next: ^14.1.4
+    next-language-detector: ^1.1.0
+    next-translate: ^2.6.2
     postcss: ^8.4.38
     prettier: ^3.2.5
     prettier-plugin-tailwindcss: ^0.5.13

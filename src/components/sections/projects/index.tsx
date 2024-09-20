@@ -47,7 +47,10 @@ export const Projects: FC = () => {
             ✅ {t('PROJECTS.1')}
           </p>
           <p className="text-xs leading-relaxed desktop:text-lg">
-            ✅ {t('PROJECTS.1')}
+            ✅ {t('PROJECTS.2')}
+          </p>
+          <p className="text-xs leading-relaxed desktop:text-lg">
+            ✅ {t('PROJECTS.3')}
           </p>
         </div>
       </div>

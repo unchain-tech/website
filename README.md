@@ -14,14 +14,14 @@ CI Status: [![CI status (main)](https://github.com/unchain-tech/website/actions/
 Setup
 
 ```zsh
-yarn install
-yarn simple-git-hooks
+pnpm install
+pnpm simple-git-hooks
 ```
 
 Local environment
 
 ```zsh
-yarn dev
+pnpm dev
 ```
 
 ## Contributing

@@ -7,16 +7,16 @@
     @apply bg-brand-onyx text-base font-light text-brand-white desktop:text-xl;
   }
   h1 {
-    @apply font-dazzle text-5xl font-medium tracking-wider desktop:text-8xl;
+    @apply font-sans text-5xl font-medium tracking-wider desktop:text-8xl;
   }
   h2 {
-    @apply font-dazzle text-xl font-light tracking-wide desktop:text-3xl;
+    @apply font-sans text-xl font-light tracking-wide desktop:text-3xl;
   }
   h3 {
-    @apply font-dazzle text-xl font-medium tracking-wide;
+    @apply font-sans text-xl font-medium tracking-wide;
   }
   a {
-    @apply cursor-pointer font-dazzle text-base font-light hover:underline desktop:text-xl;
+    @apply cursor-pointer font-sans text-base font-light hover:underline desktop:text-xl;
   }
   p {
     @apply text-base font-normal leading-relaxed tracking-wider desktop:text-xl;
@@ -26,7 +26,7 @@
   }
   footer,
   span {
-    @apply font-dazzle font-light tracking-wider;
+    @apply font-sans font-light tracking-wider;
   }
 }
 
@@ -37,30 +37,4 @@
   .btn {
     @apply cursor-pointer rounded-2xl px-6 py-3 drop-shadow-xl;
   }
-}
-
-@font-face {
-  font-family: 'dazzle_unicase';
-  src: url('../font/DazzleUnicase-Heavy.otf') format('opentype');
-  font-weight: 900;
-}
-@font-face {
-  font-family: 'dazzle_unicase';
-  src: url('../font/DazzleUnicase-Bold.otf') format('opentype');
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'dazzle_unicase';
-  src: url('../font/DazzleUnicase-Medium.otf') format('opentype');
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'dazzle_unicase';
-  src: url('../font/DazzleUnicase-Light.otf') format('opentype');
-  font-weight: 300;
-}
-@font-face {
-  font-family: 'dazzle_unicase';
-  src: url('../font/DazzleUnicase-Thin.otf') format('opentype');
-  font-weight: 100;
 }

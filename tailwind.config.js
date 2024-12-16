@@ -65,7 +65,6 @@ module.exports = {
           700: '#000000',
         },
       },
-      fontFamily: { dazzle: ['dazzle_unicase', 'sans-serif'] },
       animation: {
         marquee: 'marquee 25s linear infinite',
         marquee2: 'marquee2 25s linear infinite',
@@ -87,5 +86,6 @@ module.exports = {
       },
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require('@tailwindcss/typography')],
 };

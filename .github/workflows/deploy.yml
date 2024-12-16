@@ -23,6 +23,10 @@ jobs:
     needs: ci
     steps:
       - uses: actions/checkout@v4
+      - name: install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
       - uses: actions/configure-pages@v5
         with:
           # Automatically inject basePath in next.config.js

@@ -17,6 +17,10 @@ jobs:
     needs: ci
     steps:
       - uses: actions/checkout@v4
+      - name: install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
       - name: Get pnpm cache directory path
         id: pnpm-cache-path
         run: echo "dir=$(pnpm store path --silent)" >> $GITHUB_OUTPUT

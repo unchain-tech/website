@@ -17,21 +17,21 @@ jobs:
     needs: ci
     steps:
       - uses: actions/checkout@v4
-      - name: Get yarn cache directory path
-        id: yarn-cache-path
-        run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+      - name: Get pnpm cache directory path
+        id: pnpm-cache-path
+        run: echo "dir=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
       - uses: actions/cache@v4
-        id: yarn-cache
+        id: pnpm-cache
         with:
           path: |
             ${{ github.workspace }}/node_modules
-            ${{ steps.yarn-cache-path.outputs.dir }}
+            ${{ steps.pnpm-cache-path.outputs.dir }}
             ${{ github.workspace }}/.next/cache
-          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
           restore-keys: |
-            ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-
+            ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}-
       - name: Run build
-        run: yarn build
+        run: pnpm build
         env:
           NEXT_PUBLIC_AIRTABLE_PAT: ${{ secrets.NEXT_PUBLIC_AIRTABLE_PAT }}
           NEXT_PUBLIC_AIRTABLE_BASE_INQUIRYFORM: ${{ secrets.NEXT_PUBLIC_AIRTABLE_BASE_INQUIRYFORM }}

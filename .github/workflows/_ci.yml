@@ -15,7 +15,8 @@ jobs:
         with:
           node-version: 20.x
           cache: pnpm
-      - name: Get pnpm store directory
+      - name: Get pnpm cache directory path
+        id: pnpm-cache-path
         run: |
           echo "store=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
       - uses: actions/cache@v4

@@ -27,6 +27,11 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           run_install: false
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
       - uses: actions/configure-pages@v5
         with:
           # Automatically inject basePath in next.config.js

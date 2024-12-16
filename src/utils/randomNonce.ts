@@ -5,5 +5,5 @@ const bufferToHex = (buffer: ArrayBuffer): string => {
 };
 
 export const generateNonce = (): string => {
-  return bufferToHex(crypto.getRandomValues(new Uint8Array(16)));
+  return bufferToHex(crypto.getRandomValues(new Uint8Array(16)).buffer);
 };

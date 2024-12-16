@@ -7,6 +7,10 @@ jobs:
       pnpm-cache-path: ${{ steps.pnpm-cache-path.outputs.store }}
     steps:
       - uses: actions/checkout@v4
+      - name: install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
       - uses: actions/setup-node@v4
         with:
           node-version: 20.x

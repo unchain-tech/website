@@ -38,8 +38,8 @@ export const NavMenu: FC = () => {
     return (
       <div
         id="nav menu"
-        className={`${props.open ? '' : 'hidden '
-          }absolute inset-y-28 right-4 flex flex-col items-end space-y-2 laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-x-6 laptop:space-y-0`}
+        className={`${props.open ? '' : 'hidden'} absolute inset-y-28 right-4 flex flex-col items-end space-y-2 
+        laptop:relative laptop:inset-y-0 laptop:flex-row laptop:space-x-6 laptop:space-y-0`}
       >
         <Item id="start" href="https://discord.gg/w3AyyvKypT" text="JOIN" />
         <Item id="start" href="https://buidl.unchain.tech/" text="BUIDL" />

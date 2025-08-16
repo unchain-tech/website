@@ -13,7 +13,7 @@ jobs:
           run_install: false
       - uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: 24
           cache: pnpm
       - name: Get pnpm cache directory path
         id: pnpm-cache-path

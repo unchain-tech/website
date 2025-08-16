@@ -5,14 +5,14 @@
   "main": "pages/_app.tsx",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neila/unchain-lp.git"
+    "url": "git+https://github.com/unchain-tech/website.git"
   },
   "contributors": [
     "neila <neila@users.noreply.github.com> (https://neila.github.io/)"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/neila/unchain-lp/issues"
+    "url": "https://github.com/unchain-tech/website/issues"
   },
   "packageManager": "pnpm@9.14.2",
   "dependencies": {

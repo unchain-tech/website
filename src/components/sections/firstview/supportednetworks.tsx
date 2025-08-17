@@ -21,6 +21,7 @@ export const SupportedNetworks: FC = () => {
   const chains = [
     'astar',
     'avalanche',
+    'base',
     'chainide',
     'ethereum',
     'icp',
@@ -29,7 +30,6 @@ export const SupportedNetworks: FC = () => {
     'solana',
     'thegraph',
     'xrpl',
-    'base',
   ];
   const links = [
     'https://astar.network/',

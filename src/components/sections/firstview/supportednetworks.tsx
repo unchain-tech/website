@@ -29,7 +29,7 @@ export const SupportedNetworks: FC = () => {
     'solana',
     'thegraph',
     'xrpl',
-    'base'
+    'base',
   ];
   const links = [
     'https://astar.network/',
@@ -42,7 +42,7 @@ export const SupportedNetworks: FC = () => {
     'https://solana.com/',
     'https://thegraph.com/',
     'https://xrpl.org/',
-    'https://www.base.org/'
+    'https://www.base.org/',
   ];
   return (
     <div id="supported networks" className="bg-brand-white">
